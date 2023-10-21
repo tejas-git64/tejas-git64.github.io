@@ -337,7 +337,7 @@ nav .links a:hover {
 	justify-content: space-around;
 	align-items: center;
 	margin: 0 auto;
-	background-image: url(../svgs/wave-home.svg);
+	background-image: url("../svgs/wave-home.svg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -438,7 +438,7 @@ h2 {
 	height: auto;
 	padding: 30px 0;
 	margin-bottom: 10px;
-	background-image: url(../svgs/blob-home.svg);
+	background-image: url("../svgs/blob-home.svg");
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -452,7 +452,7 @@ h2 {
 #about {
 	width: 100%;
 	height: auto;
-	background-image: url(../svgs/wave-home-portfolio.svg);
+	background-image: url("../svgs/wave-home-portfolio.svg");
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -474,7 +474,7 @@ h2 {
 	height: auto;
 	box-shadow: none;
 	border-radius: 0;
-	background-image: url(../svgs/waves-project-landscape.svg);
+	background-image: url("../svgs/waves-project-landscape.svg");
 	background-position: top;
 }
 .projects-container {
@@ -578,7 +578,7 @@ h2 {
 	height: auto;
 	box-shadow: none;
 	border-radius: 0;
-	background-image: url(../svgs/waves-about.svg);
+	background-image: url("../svgs/waves-about.svg");
 	background-position: top;
 	position: relative;
 	background-size: cover;
@@ -597,7 +597,7 @@ h2 {
 #contact h1,
 #about h1 {
 	width: 100%;
-	background-image: url(../svgs/waves-contact-landscape.svg);
+	background-image: url("../svgs/waves-contact-landscape.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
@@ -609,7 +609,7 @@ h2 {
 #contact .top {
 	width: 100%;
 	height: 300px;
-	background-image: url(../svgs/waves-contact-top.svg);
+	background-image: url("../svgs/waves-contact-top.svg");
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -678,7 +678,7 @@ h2 {
 	color: #f9f9f9;
 }
 #about h1 {
-	background-image: url(../svgs/blob-about.svg);
+	background-image: url("../svgs/blob-about.svg");
 	background-position: top;
 	padding-top: 0;
 	padding-bottom: 30vw;
@@ -926,7 +926,7 @@ h2 {
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url(../svgs/waves-contact-bottom.svg);
+	background-image: url("../svgs/waves-contact-bottom.svg");
 	width: 100%;
 	padding-bottom: 200px;
 	position: absolute;
@@ -1157,14 +1157,14 @@ footer .bottom-links li a:hover {
 		font-size: 14px;
 	}
 	#contact h1 {
-		background-image: url(../svgs/waves-contact.svg);
+		background-image: url("../svgs/waves-contact.svg");
 		padding-bottom: 40vw;
 		padding-top: 0;
 		font-size: 5vw;
 		margin-top: 20px;
 	}
 	#contact .top {
-		background-image: url(../svgs/waves-contact-top.svg);
+		background-image: url("../svgs/waves-contact-top.svg");
 		position: absolute;
 		top: -80px;
 		left: 0;
@@ -1403,7 +1403,7 @@ footer .bottom-links li a:hover {
 		justify-content: center;
 	}
 	#contact h1 {
-		background-image: url(../svgs/waves-contact.svg);
+		background-image: url("../svgs/waves-contact.svg");
 		padding-bottom: 52vw;
 		padding-top: 0;
 		font-size: 5vw;
@@ -1411,7 +1411,7 @@ footer .bottom-links li a:hover {
 	}
 	#contact .top {
 		height: 50px;
-		background-image: url(../svgs/waves-contact-top.svg);
+		background-image: url("../svgs/waves-contact-top.svg");
 		position: absolute;
 		top: -100px;
 		left: 0;
@@ -1663,7 +1663,7 @@ footer .bottom-links li a:hover {
 		margin-bottom: 5px;
 	}
 	#about h1 {
-		background-image: url(../svgs/blob-about.svg);
+		background-image: url("../svgs/blob-about.svg");
 		padding-bottom: 20vw;
 		padding-top: 5vw;
 	}
@@ -1712,7 +1712,7 @@ footer .bottom-links li a:hover {
 		justify-content: center;
 	}
 	#contact h1 {
-		background-image: url(../svgs/waves-contact.svg);
+		background-image: url("../svgs/waves-contact.svg");
 		padding-bottom: 52vw;
 		padding-top: 0;
 		font-size: 4vw;
@@ -1720,7 +1720,7 @@ footer .bottom-links li a:hover {
 	}
 	#contact .top {
 		height: 50px;
-		background-image: url(../svgs/waves-contact-top.svg);
+		background-image: url("../svgs/waves-contact-top.svg");
 		position: absolute;
 		top: -210px;
 		left: 0;
@@ -1805,7 +1805,7 @@ footer .bottom-links li a:hover {
 		margin: 20px auto 80px;
 		height: 45dvh;
 		flex-direction: row;
-		background-image: url(../svgs/wave-home-landscape.svg);
+		background-image: url("../svgs/wave-home-landscape.svg");
 		background-position: bottom;
 	}
 	#introduction .intro-images {
@@ -1954,7 +1954,7 @@ footer .bottom-links li a:hover {
 	#about h1 {
 		padding-bottom: 12vw;
 		padding-top: 0vw;
-		background-image: url(../svgs/blob-about-landscape.svg);
+		background-image: url("../svgs/blob-about-landscape.svg");
 	}
 	#about {
 		height: 160dvh;
@@ -1998,7 +1998,7 @@ footer .bottom-links li a:hover {
 		justify-content: center;
 	}
 	#contact h1 {
-		background-image: url(../svgs/wave-contact-landscape.svg);
+		background-image: url("../svgs/wave-contact-landscape.svg");
 		padding-bottom: 18vw;
 		padding-top: 0;
 		font-size: 3vw;
@@ -2006,7 +2006,7 @@ footer .bottom-links li a:hover {
 	}
 	#contact .top {
 		height: 50px;
-		background-image: url(../svgs/waves-contact-top-landscape.svg);
+		background-image: url("../svgs/waves-contact-top-landscape.svg");
 		position: absolute;
 		top: -180px;
 		left: 0;
@@ -2040,7 +2040,7 @@ footer .bottom-links li a:hover {
 	}
 	#contact .bottom-wave {
 		padding: 20vw 0px;
-		background-image: url(../svgs/waves-contact-bottom-landscape.svg);
+		background-image: url("../svgs/waves-contact-bottom-landscape.svg");
 	}
 	footer {
 		display: flex;
@@ -2092,7 +2092,7 @@ footer .bottom-links li a:hover {
 		margin: 30px auto 80px;
 		height: 35vw;
 		flex-direction: row;
-		background-image: url(../svgs/wave-home-landscape.svg);
+		background-image: url("../svgs/wave-home-landscape.svg");
 		background-position: center;
 	}
 	#introduction .intro-images {
@@ -2242,7 +2242,7 @@ footer .bottom-links li a:hover {
 	#about h1 {
 		padding-bottom: 12vw;
 		padding-top: 2vw;
-		background-image: url(../svgs/blob-about-landscape.svg);
+		background-image: url("../svgs/blob-about-landscape.svg");
 	}
 	#about .about-me {
 		padding: 20px 0;
@@ -2287,7 +2287,7 @@ footer .bottom-links li a:hover {
 		justify-content: center;
 	}
 	#contact h1 {
-		background-image: url(../svgs/wave-contact-landscape.svg);
+		background-image: url("../svgs/wave-contact-landscape.svg");
 		padding-bottom: 20vw;
 		padding-top: 0;
 		font-size: 35px;
@@ -2295,7 +2295,7 @@ footer .bottom-links li a:hover {
 	}
 	#contact .top {
 		height: 50px;
-		background-image: url(../svgs/waves-contact-top-landscape.svg);
+		background-image: url("../svgs/waves-contact-top-landscape.svg");
 		position: absolute;
 		top: -15vw;
 		left: 0;
@@ -2329,7 +2329,7 @@ footer .bottom-links li a:hover {
 	}
 	#contact .bottom-wave {
 		padding: 20vw 0px;
-		background-image: url(../svgs/waves-contact-bottom-landscape.svg);
+		background-image: url("../svgs/waves-contact-bottom-landscape.svg");
 	}
 	footer {
 		height: 15dvh;
