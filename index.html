@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <title>Hey There 👋</title>
-    <script type="module" crossorigin src="./assets/index-df9ef442.js"></script>
-    <link rel="stylesheet" href="./assets/index-26d36383.css">
+    <script type="module" crossorigin src="/assets/index-9a7280d3.js"></script>
+    <link rel="stylesheet" href="/assets/index-3992a282.css">
   </head>
 
   <body class="animateFadeIn">
@@ -62,10 +62,23 @@
         </div>
         <ul id="roles">
           <li class="role animateFromRight">
-            <h3>Digital Associate Engineer (2022 - Present)</h3>
-            <p>Developed user interfaces and implemented restful web services using Springboot, and frameworks such as
-              React/Angular
-            </p>
+            <div style="margin-bottom: 5px; position: relative;">
+              <div
+                style="width: 5px; height: 5px; background-color: black; border-radius: 100%; position: absolute; left: -14px; top: 10px;">
+              </div>
+              <h3>Digital Engineer (Nov 2023 - Present)</h3>
+            </div>
+            <div style="position: relative;">
+              <div
+                style="width: 5px; height: 5px; background-color: black; border-radius: 100%; position: absolute; left: -14px; top: 10px;">
+              </div>
+              <h3>Digital Associate Engineer (Sept 2022 - Oct 2023)</h3>
+              <p>Developed user interfaces and implemented restful web services using
+                Springboot, and frameworks such
+                as
+                React/Angular
+              </p>
+            </div>
           </li>
         </ul>
         <div class="stack-header">
@@ -144,7 +157,7 @@
         <div class="projects-container">
           <div id="project1" class="project">
             <div class="main-content animateFromLeft">
-              <img src="./images/bingetown/Screenshot 2023-07-30 192627.png" alt="bingetown">
+              <img src="./images/bingetown/main.webp" alt="bingetown">
               <ul class="links">
                 <li><a href="https://github.com/tejas-git64/BingeTown">Github<img src="./svgs/icons8-github.svg"
                       id="github" alt="github" /></a></li>
@@ -158,27 +171,12 @@
             </div>
           </div>
           <div id="project2" class="project">
-            <div class="main-description animateFromLeft">
-              <h2 class="main-title">Tenki</h2>
-              <p class="main-summary">A sleek and minimal weather app with built-in map support, can save locations and
-                updates weather data in realtime along with future forecasts</p>
-            </div>
-            <div class="main-content animateFromRight">
-              <img src="./images/Tenki/Screenshot 2023-07-30 201624.png" alt="tenki">
-              <ul class="links">
-                <li><a href="https://github.com/tejas-git64/Tenki">Github<img src="./svgs/icons8-github.svg" id="github"
-                      alt="github" /></a></li>
-                <li><a href="https://preeminent-cucurucho-2b4740.netlify.app">View demo</a></li>
-              </ul>
-            </div>
-          </div>
-          <div id="project3" class="project">
             <div class="main-content animateFromLeft">
-              <img src="./images/lowkey/main.png" alt="lowkey">
+              <img src="./images/lowkey/main.webp" alt="lowkey">
               <ul class="links">
                 <li><a href="https://github.com/tejas-git64/LowKey-player">Github<img src="./svgs/icons8-github.svg"
                       id="github" alt="github" /></a></li>
-                <li><a href="https://funny-pudding-8b37aa.netlify.app/">View demo</a></li>
+                <li><a href="https://lowkeymusic-v2.netlify.app">View demo</a></li>
               </ul>
             </div>
             <div class="main-description animateFromRight">
@@ -187,13 +185,13 @@
                 so much more. Has the familiar spotify-like experience along with my own UI mixup</p>
             </div>
           </div>
-          <div id="project4" class="project">
+          <div id="project3" class="project">
             <div class="main-description animateFromLeft">
               <h2 class="main-title">SocialDashboard</h2>
               <p class="main-summary">A dashboard for social media created using Svelte and Chartjs</p>
             </div>
             <div class="main-content animateFromRight">
-              <img src="./images/socialdashboard/Screenshot 2023-10-21 060646.png" alt="notes">
+              <img src="./images/socialdashboard/main.webp" alt="notes">
               <ul class="links">
                 <li><a href="https://github.com/tejas-git64/SocialDashboard">Github<img src="./svgs/icons8-github.svg"
                       id="github" alt="github" /></a></li>
@@ -201,6 +199,23 @@
               </ul>
             </div>
           </div>
+          <div id="project4" class="project">
+            <div class="main-description animateFromLeft">
+              <h2 class="main-title">Tenki</h2>
+              <p class="main-summary">A sleek and minimal weather app with built-in map support, can save locations and
+                updates weather data in realtime along with future forecasts</p>
+            </div>
+            <div class="main-content animateFromRight">
+              <img src="./images/Tenki/main.webp" alt="tenki">
+              <ul class="links">
+                <li><a href="https://github.com/tejas-git64/Tenki">Github<img src="./svgs/icons8-github.svg" id="github"
+                      alt="github" /></a></li>
+                <li><a href="https://preeminent-cucurucho-2b4740.netlify.app">View demo</a></li>
+              </ul>
+            </div>
+          </div>
+
+
         </div>
       </section>
       <section id="about">
@@ -209,9 +224,9 @@
           <div class="img-back">
             <img src="./images/portfolio_image.png" alt="tejasdl" class="animateFromRight" id="about-img">
           </div>
-          <p class="story animateFromLeft">Back in 2020, a month before the pandemic set in, while in college I
+          <p class="story animateFromLeft">Back in 2020, a month before the pandemic set in, in college I
             overheard my friend
-            mentioning the term <b>CSS</b> and that did it. It started my journey into Web Development, me being the
+            mentioning the term <b>CSS</b> and that started my journey into Web Development, me being the
             guy who
             undoubtedly loves
             good CGI, satisfying animations/visual ASMRs and computers, jumped into it. Fast-forward to today, and I've
@@ -266,7 +281,7 @@
         </ul>
       </footer>
     </div>
-
+    
   </body>
 
 </html>
