@@ -1157,14 +1157,14 @@ footer .bottom-links li a:hover {
 		font-size: 14px;
 	}
 	#contact h1 {
-		background-image: url(./svgs/waves-contact.svg);
+		background-image: url(../svgs/waves-contact.svg);
 		padding-bottom: 40vw;
 		padding-top: 0;
 		font-size: 5vw;
 		margin-top: 20px;
 	}
 	#contact .top {
-		background-image: url(./svgs/waves-contact-top.svg);
+		background-image: url(../svgs/waves-contact-top.svg);
 		position: absolute;
 		top: -80px;
 		left: 0;
