@@ -68,18 +68,18 @@ function m(n, r) {
 		});
 	}, r).observe(n);
 }
-l(".stack-header", { rootMargin: "-100px" });
-l(".tech", { rootMargin: "-20px" });
-l(".animateFromLeft", { rootMargin: "-20px" });
-l(".animateFromRight", { rootMargin: "-20px" });
-l(".animateFadeIn", { rootMargin: "-20px" });
-l(".animateFadeBottom", { rootMargin: "-20px" });
+l(".stack-header", { rootMargin: "-10px" });
+l(".tech", { rootMargin: "-10px" });
+l(".animateFromLeft", { rootMargin: "-10px" });
+l(".animateFromRight", { rootMargin: "-10px" });
+l(".animateFadeIn", { rootMargin: "-10px" });
+l(".animateFadeBottom", { rootMargin: "-10px" });
 d.forEach((n) => n.addEventListener("input", f));
 s.addEventListener("mouseover", function () {
-	(c.style.transform = "translateX(-20px)"),
+	(c.style.transform = "translateX(-10px)"),
 		(c.style.transition = "all 0.35s ease"),
-		(o.style.transition = "all 0.3s ease"),
-		(o.style.transform = "translateX(70px)"),
+		(o.style.transition = "all 0.35s ease"),
+		(o.style.transform = "translateX(10px)"),
 		(o.style.opacity = 1);
 });
 s.addEventListener("mouseleave", function () {
@@ -91,6 +91,6 @@ s.addEventListener("click", function () {
 	(c.style.transform = "translateX(0px)"),
 		(o.style.transition = "all 0.8s ease"),
 		(o.style.opacity = 1),
-		(o.style.transform = "translateX(150px)"),
+		(o.style.transform = "translateX(50px)"),
 		(o.style.opacity = 0);
 });

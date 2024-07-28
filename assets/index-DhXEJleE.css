@@ -174,13 +174,13 @@ body {
 	place-items: center;
 	width: 100%;
 	height: 100vh;
-	transition: 0.5s all ease;
+	transition: 0.25s all ease;
 	overflow-x: hidden;
 	-webkit-animation: body 0.5s ease-in;
 	animation: body 0.5s ease-in;
 }
 .animateFromLeft.animated {
-	-webkit-animation: fadeInLeft 0.5s ease-in;
+	-webkit-animation: fadeInLeft 0.5s ease;
 	animation: fadeInLeft 0.5s ease-in;
 }
 .animateFromRight.animated {
@@ -287,7 +287,7 @@ nav {
 	border-radius: 15px;
 }
 nav .links {
-	margin-top: 8px;
+	margin-top: 10px;
 }
 nav .links,
 nav .mobile-nav {
@@ -302,6 +302,7 @@ nav .mobile-nav {
 }
 nav .mobile-nav {
 	padding-left: 10px;
+	margin-bottom: -3px;
 }
 nav .links a,
 nav .mobile-nav a {
@@ -330,6 +331,7 @@ nav #logo {
 	margin-left: -10px;
 	-webkit-animation: fadeIn 1s ease-in;
 	animation: fadeIn 1s ease-in;
+	margin-bottom: -3px;
 }
 .social {
 	padding: 5px;
@@ -337,6 +339,7 @@ nav #logo {
 	animation: fadeInRight 1s ease;
 	display: flex;
 	align-items: center;
+	margin-bottom: -3px;
 }
 .social a:nth-child(2) {
 	margin: 0px 6vw;
@@ -744,12 +747,15 @@ h2 {
 #portfolio .stack-header img {
 	width: 30px;
 	height: 30px;
+	margin-left: 10px;
 }
 #portfolio .stack-heading {
 	font-size: 40px;
 	color: #fff;
 	font-weight: 900;
 	white-space: nowrap;
+	transform: translateX(10px);
+	visibility: visible;
 }
 .tech-stacks {
 	width: 80%;
@@ -762,14 +768,18 @@ h2 {
 	place-items: center;
 }
 .tech-stacks li {
-	background-color: #22003d;
+	background-color: #160029;
 	padding: 5px 12px 12px;
 	margin: 20px;
 	border-radius: 20px;
-	border: 1px solid #200033;
-	box-shadow: 0 0 5px #0b0011;
+	box-shadow: inset 0 0 10px #220034;
+	border: 1px solid #240036;
 	list-style: none;
 	transition: 0.25s all ease;
+}
+.tech-stacks li:hover {
+	background-color: #260046;
+	box-shadow: 0 0 5px #000000;
 }
 .tech-stacks li img {
 	width: 50px;
@@ -827,13 +837,6 @@ h2 {
 	font-weight: 900;
 	font-size: 13px;
 	padding: 5px 0;
-}
-.vanilla li:hover,
-.main li:hover,
-.abstraction li:hover,
-.platforms li:hover,
-.backends li:hover {
-	box-shadow: 0 0 10px #bd43ff;
 }
 .tech.animated {
 	-webkit-animation: fadeIn 0.5s ease;
@@ -926,12 +929,12 @@ h2 {
 	margin-bottom: 20px;
 	border: none;
 	border-bottom: 2px solid #e3e3e3;
-	font-size: 13px;
+	font-size: 16px;
 	max-height: auto;
 	padding: 5px;
-	font-weight: 400;
+	font-weight: 600;
 	outline: none;
-	border-radius: 10px;
+	color: #000;
 }
 .contact-container form button {
 	padding: 18px 0;
@@ -1098,9 +1101,9 @@ footer .bottom-links li a:hover {
 		font-size: 18px;
 	}
 	#portfolio .stack-header img {
-		width: 28px;
-		height: 28px;
-		margin-left: 13px;
+		width: 25px;
+		height: 25px;
+		margin-left: 23px;
 	}
 	#portfolio .tech-stacks {
 		width: 90%;
@@ -1371,9 +1374,9 @@ footer .bottom-links li a:hover {
 		font-size: 20px;
 	}
 	#portfolio .stack-header img {
-		width: 30px;
-		height: 30px;
-		margin-left: 10px;
+		width: 25px;
+		height: 25px;
+		margin-left: 20px;
 	}
 	#portfolio .tech-stacks {
 		width: 90%;
@@ -1652,9 +1655,9 @@ footer .bottom-links li a:hover {
 		font-size: 20px;
 	}
 	#portfolio .stack-header img {
-		width: 30px;
-		height: 30px;
-		margin-left: 10px;
+		width: 25px;
+		height: 25px;
+		margin-left: 20px;
 	}
 	#portfolio .tech-stacks li p {
 		font-size: 13px;
@@ -2553,7 +2556,7 @@ footer .bottom-links li a:hover {
 	0% {
 		opacity: 1;
 	}
-	to {
+	100% {
 		opacity: 0;
 		display: none;
 	}
@@ -2562,7 +2565,7 @@ footer .bottom-links li a:hover {
 	0% {
 		opacity: 1;
 	}
-	to {
+	100% {
 		opacity: 0;
 		display: none;
 	}
@@ -2572,7 +2575,7 @@ footer .bottom-links li a:hover {
 		opacity: 0;
 		transform: scale(0.9);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: scale(1);
 	}
@@ -2580,9 +2583,9 @@ footer .bottom-links li a:hover {
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
-		transform: scale(0.9);
+		transform: scale(0.97);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: scale(1);
 	}
@@ -2592,7 +2595,7 @@ footer .bottom-links li a:hover {
 		opacity: 0;
 		transform: translate(-5%);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: translate(0);
 	}
@@ -2602,7 +2605,7 @@ footer .bottom-links li a:hover {
 		opacity: 0;
 		transform: translate(-5%);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: translate(0);
 	}
@@ -2613,7 +2616,7 @@ footer .bottom-links li a:hover {
 		transform: translate(-20px);
 		transform: scale(0);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: translate(0);
 		transform: scale(1);
@@ -2625,7 +2628,7 @@ footer .bottom-links li a:hover {
 		transform: translate(20px);
 		transform: scale(0.8);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: translate(0);
 		transform: scale(1);
@@ -2636,7 +2639,7 @@ footer .bottom-links li a:hover {
 		opacity: 0;
 		transform: translate(5%);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: translate(0);
 	}
@@ -2646,7 +2649,7 @@ footer .bottom-links li a:hover {
 		opacity: 0;
 		transform: translate(5%);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: translate(0);
 	}
@@ -2656,7 +2659,7 @@ footer .bottom-links li a:hover {
 		opacity: 0;
 		transform: translateY(-5%);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: translate(0);
 	}
@@ -2666,7 +2669,7 @@ footer .bottom-links li a:hover {
 		opacity: 0.6;
 		transform: translateY(-5%);
 	}
-	to {
+	100% {
 		opacity: 1;
 		transform: translateY(0);
 	}
