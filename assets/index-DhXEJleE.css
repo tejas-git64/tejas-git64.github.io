@@ -286,6 +286,9 @@ nav {
 	z-index: 10;
 	border-radius: 15px;
 }
+nav .links {
+	margin-top: 8px;
+}
 nav .links,
 nav .mobile-nav {
 	height: 50px;
@@ -327,7 +330,6 @@ nav #logo {
 	margin-left: -10px;
 	-webkit-animation: fadeIn 1s ease-in;
 	animation: fadeIn 1s ease-in;
-	margin-top: -5px;
 }
 .social {
 	padding: 5px;
@@ -524,7 +526,6 @@ h2 {
 	list-style: none;
 	justify-content: space-evenly;
 	padding: 0;
-	margin: 5px 0;
 	align-items: center;
 }
 .main-content .links li a {
@@ -629,6 +630,9 @@ h2 {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+ #comments {
+	background-color: #fff;
 }
 #contact .top {
 	width: 100%;
