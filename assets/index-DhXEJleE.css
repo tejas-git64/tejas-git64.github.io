@@ -631,7 +631,7 @@ h2 {
 	top: 0;
 	left: 0;
 }
- #comments {
+#comments {
 	background-color: #fff;
 }
 #contact .top {
@@ -1001,6 +1001,7 @@ footer .bottom-links li a:hover {
 		justify-content: space-between;
 		align-items: center;
 		padding: 0;
+		top: 5px;
 	}
 	nav .links {
 		display: none;
@@ -1288,8 +1289,8 @@ footer .bottom-links li a:hover {
 }
 @media screen and (min-width: 450px) and (max-width: 599px) {
 	nav {
-		height: 50px;
 		padding: 0;
+		top: 5px;
 	}
 	nav .links {
 		display: none;
