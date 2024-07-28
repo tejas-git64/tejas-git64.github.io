@@ -1103,7 +1103,8 @@ footer .bottom-links li a:hover {
 	#portfolio .stack-header img {
 		width: 25px;
 		height: 25px;
-		margin-left: 23px;
+		margin-left: 15px;
+		margin-bottom: 0px;
 	}
 	#portfolio .tech-stacks {
 		width: 90%;
@@ -1993,9 +1994,10 @@ footer .bottom-links li a:hover {
 		font-size: 23px;
 	}
 	#portfolio .stack-header img {
-		width: 35px;
-		height: 35px;
-		margin-left: 10px;
+		width: 30px;
+		height: 30px;
+		margin-left: 20px;
+		margin-top: -5px;
 	}
 	#portfolio .tech-stacks,
 	#portfolio .platforms,
@@ -2305,9 +2307,10 @@ footer .bottom-links li a:hover {
 		font-size: 25px;
 	}
 	#portfolio .stack-header img {
-		width: 35px;
-		height: 35px;
-		margin-left: 10px;
+		width: 30px;
+		height: 30px;
+		margin-left: 20px;
+		margin-top: -5px;
 	}
 	#portfolio .tech-stacks,
 	#portfolio .platforms,
