@@ -271,28 +271,46 @@ p {
 	background: #0b0015;
 }
 nav {
-	width: 90%;
+	width: 95%;
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 10px;
+	left: 0;
+	background-color: #0b0015;
+	padding: 0px 40px;
+	z-index: 10;
+	border-radius: 15px;
 }
-nav .links {
+nav .links,
+nav .mobile-nav {
 	height: 50px;
 	list-style: none;
 	display: flex;
 	transition: all 0.5 ease;
 	-webkit-animation: fadeInLeft 0.5s ease;
 	animation: fadeInLeft 1s ease;
+	align-items: center;
+	justify-content: center;
 }
-nav .links a {
+nav .mobile-nav {
+	padding-left: 10px;
+}
+nav .links a,
+nav .mobile-nav a {
 	-webkit-text-decoration: none;
 	text-decoration: none;
 	color: #fff;
 	margin: 0 8px;
 	width: 100%;
 	transition: all 0.5 ease;
+}
+nav .mobile-nav a img {
+	width: 30px;
 }
 nav .links a:hover {
 	color: #d374ff;
@@ -332,6 +350,7 @@ nav #logo {
 .social a:nth-child(3) img {
 	width: 35px;
 	height: 35px;
+	margin-top: -1.5px;
 }
 #introduction {
 	width: 90%;
@@ -840,9 +859,9 @@ h2 {
 	padding: 0 0 10px;
 }
 .role p {
-	color: #fff;
+	color: #ffffff;
 	font-weight: 300;
-	font-size: 13px;
+	font-size: 12px;
 }
 .projects-container {
 	width: 90%;
@@ -982,6 +1001,22 @@ footer .bottom-links li a:hover {
 	nav .links {
 		display: none;
 	}
+	nav .mobile-nav {
+		width: 30%;
+	}
+	nav .social {
+		width: 30%;
+		justify-content: center;
+	}
+	.social a:nth-child(2) {
+		margin: 0px 15px;
+	}
+	.mobile-nav a img {
+		width: 20px;
+	}
+	.social a img {
+		width: 25px;
+	}
 	#logo {
 		width: 80px;
 		height: 80px;
@@ -1026,6 +1061,7 @@ footer .bottom-links li a:hover {
 		font-size: 16px;
 		text-align: center;
 		line-height: 25px;
+		padding: 0px 10px;
 	}
 	#introduction .intro-text p {
 		font-size: 3vw;
@@ -1073,7 +1109,7 @@ footer .bottom-links li a:hover {
 		height: 35px;
 	}
 	#roles {
-		width: 85%;
+		width: 95%;
 		height: auto;
 		margin-top: -10px;
 	}
@@ -1241,6 +1277,9 @@ footer .bottom-links li a:hover {
 	footer .bottom-links li a {
 		font-size: 13px;
 	}
+	::-webkit-scrollbar {
+		width: 0;
+	}
 }
 @media screen and (min-width: 450px) and (max-width: 599px) {
 	nav {
@@ -1250,10 +1289,18 @@ footer .bottom-links li a:hover {
 	nav .links {
 		display: none;
 	}
+	nav .social {
+		width: 25%;
+		justify-content: center;
+		padding-right: 15px;
+	}
+	.social a:nth-child(2) {
+		margin: 0px 15px;
+	}
 	#logo {
 		width: 80px;
 		height: 80px;
-		margin-right: -15px;
+		margin-right: -2.5%;
 	}
 	#introduction {
 		width: 100%;
@@ -1263,14 +1310,15 @@ footer .bottom-links li a:hover {
 	}
 	#introduction .intro-images {
 		width: 60%;
-		height: 40vh;
-		padding: 35px 25px;
+		height: 30vh;
+		padding: 30px 25px 55px 25px;
 		border-radius: 60vw 60vw 40vw 40vw;
 		margin-top: 20px;
 		margin-bottom: 40px;
 	}
 	#introduction .intro-images img {
-		width: 250px;
+		width: 230px;
+		padding-bottom: 10px;
 	}
 	#introduction .intro-text {
 		width: 80%;
@@ -1293,6 +1341,7 @@ footer .bottom-links li a:hover {
 	#introduction .intro-text b {
 		font-size: 18px;
 		text-align: center;
+		padding: 0px 10px;
 		line-height: 30px;
 	}
 	#introduction .intro-text p {
@@ -1488,6 +1537,9 @@ footer .bottom-links li a:hover {
 	footer {
 		height: 20dvh;
 	}
+	footer a #logo {
+		margin: 0px;
+	}
 	footer .bottom-links {
 		width: 80%;
 		margin: 0 auto;
@@ -1495,6 +1547,9 @@ footer .bottom-links li a:hover {
 	}
 	footer .bottom-links li a {
 		font-size: 13px;
+	}
+	::-webkit-scrollbar {
+		width: 0;
 	}
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -1504,19 +1559,26 @@ footer .bottom-links li a:hover {
 		justify-content: space-between;
 		align-items: center;
 	}
+	nav .mobile-nav {
+		display: none;
+	}
+	nav #logo {
+		margin-left: -55px;
+	}
 	nav .menu {
 		display: block;
 	}
 	nav .links {
 		justify-content: center;
 		align-items: center;
-		padding: 0;
+		padding: 0 10px;
 	}
 	nav .social {
 		display: flex;
 		align-items: center;
-		width: 20%;
-		justify-content: space-between;
+		width: 25%;
+		justify-content: flex-end;
+		padding-right: 15px;
 	}
 	nav .social a:nth-child(2) {
 		margin: 0 20px;
@@ -1600,9 +1662,9 @@ footer .bottom-links li a:hover {
 	}
 	#roles {
 		width: 85%;
-         height: -webkit-max-content;
-        height: -moz-max-content;
-        height: max-content;
+		height: -webkit-max-content;
+		height: -moz-max-content;
+		height: max-content;
 	}
 	#roles h3 {
 		font-size: 16px;
@@ -1809,8 +1871,8 @@ footer .bottom-links li a:hover {
 		padding-bottom: 30px;
 		flex-direction: column;
 	}
-	footer img {
-		margin-right: -55px;
+	footer a #logo {
+		margin: 0px;
 	}
 	footer .bottom-links {
 		width: 70%;
@@ -1830,10 +1892,16 @@ footer .bottom-links li a:hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 0;
+		padding: 0 10px;
 	}
 	nav .links a {
 		margin-right: 1.5vw;
+	}
+	nav .mobile-nav {
+		display: none;
+	}
+	nav #logo {
+		margin-left: -50px;
 	}
 	nav .social {
 		display: block;
@@ -1842,7 +1910,7 @@ footer .bottom-links li a:hover {
 		display: flex;
 		align-items: center;
 		width: 18%;
-		justify-content: space-between;
+		justify-content: center;
 	}
 	nav .social a:nth-child(2) {
 		margin: 0px 2.5vw;
@@ -1952,8 +2020,9 @@ footer .bottom-links li a:hover {
 	}
 	#roles {
 		width: 99%;
-		margin-top: -25px;
-		margin-bottom: 20px;
+		margin-top: 5px;
+		margin-bottom: 40px;
+		height: auto;
 	}
 	#roles .role {
 		width: 83%;
@@ -2106,8 +2175,8 @@ footer .bottom-links li a:hover {
 		padding-bottom: 30px;
 		flex-direction: column;
 	}
-	footer img {
-		margin-right: -55px;
+	footer a #logo {
+		margin: 0px;
 	}
 	footer .bottom-links {
 		width: 50%;
@@ -2123,11 +2192,14 @@ footer .bottom-links li a:hover {
 	nav .menu {
 		display: none;
 	}
+	nav .mobile-nav {
+		display: none;
+	}
 	nav .links {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 0;
+		padding: 0 15px;
 	}
 	nav .links a {
 		margin-right: 2vw;
@@ -2139,7 +2211,7 @@ footer .bottom-links li a:hover {
 		display: flex;
 		align-items: center;
 		width: 180px;
-		justify-content: space-between;
+		justify-content: center;
 	}
 	nav .social a:nth-child(2) {
 		margin: 0px 2vw;
@@ -2147,7 +2219,7 @@ footer .bottom-links li a:hover {
 	#logo {
 		width: 80px;
 		height: 80px;
-		margin-right: 3vw;
+		margin-right: 80px;
 	}
 	#introduction {
 		width: 90%;
@@ -2307,7 +2379,8 @@ footer .bottom-links li a:hover {
 	}
 	#roles {
 		width: 92.5%;
-		margin-top: -60px;
+		margin-top: 80px;
+		margin-bottom: 150px;
 	}
 	#about {
 		height: 150dvh;
@@ -2407,9 +2480,13 @@ footer .bottom-links li a:hover {
 	}
 	footer {
 		height: 15dvh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
-	footer img {
-		margin-right: -75px;
+	footer a #logo {
+		margin: 0px;
 	}
 	footer .bottom-links {
 		width: 80%;
