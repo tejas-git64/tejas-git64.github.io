@@ -1000,7 +1000,7 @@ footer .bottom-links li a:hover {
 	nav {
 		justify-content: space-between;
 		align-items: center;
-		padding: 10px 0;
+		padding: 0;
 	}
 	nav .links {
 		display: none;
@@ -1011,6 +1011,7 @@ footer .bottom-links li a:hover {
 	nav .social {
 		width: 30%;
 		justify-content: center;
+		padding-right: 10px;
 	}
 	.social a:nth-child(2) {
 		margin: 0px 15px;
@@ -1288,7 +1289,7 @@ footer .bottom-links li a:hover {
 @media screen and (min-width: 450px) and (max-width: 599px) {
 	nav {
 		height: 50px;
-		padding: 10px 0;
+		padding: 0;
 	}
 	nav .links {
 		display: none;
