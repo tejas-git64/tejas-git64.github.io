@@ -1,12 +1,19 @@
 (function () {
 	const r = document.createElement("link").relList;
-	if (r && r.supports && r.supports("modulepreload")) return;
-	for (const e of document.querySelectorAll('link[rel="modulepreload"]')) i(e);
+	if (r && r.supports && r.supports("modulepreload")) {
+		return;
+	}
+	for (const e of document.querySelectorAll('link[rel="modulepreload"]')) {
+		i(e);
+	}
 	new MutationObserver((e) => {
-		for (const t of e)
-			if (t.type === "childList")
-				for (const u of t.addedNodes)
+		for (const t of e) {
+			if (t.type === "childList") {
+				for (const u of t.addedNodes) {
 					u.tagName === "LINK" && u.rel === "modulepreload" && i(u);
+				}
+			}
+		}
 	}).observe(document, { childList: !0, subtree: !0 });
 	function a(e) {
 		const t = {};
@@ -22,7 +29,9 @@
 		);
 	}
 	function i(e) {
-		if (e.ep) return;
+		if (e.ep) {
+			return;
+		}
 		e.ep = !0;
 		const t = a(e);
 		fetch(e.href, t);
@@ -43,10 +52,11 @@ var d = document.querySelectorAll(
 	"#contact-form input, #contact-form textarea"
 );
 function f() {
-	for (let n of d)
+	for (let n of d) {
 		n.value.length > 0
 			? ((s.disabled = !1), (s.style.cursor = "pointer"))
 			: ((s.disabled = !0), (s.style.cursor = "not-allowed"));
+	}
 }
 function l(n, r = {}) {
 	let a = document.querySelectorAll(n);
