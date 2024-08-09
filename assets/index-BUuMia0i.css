@@ -2,6 +2,7 @@
 	font-family: "Plus Jakarta Sans";
 	src: url("/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf")
 		format("truetype");
+	font-display: "swap";
 }
 
 :root {
@@ -2457,7 +2458,7 @@ footer .bottom-links li a:hover {
 @-webkit-keyframes fadeIn {
 	0% {
 		opacity: 0;
-		transform: scale(0.9);
+		transform: scale(0.97);
 	}
 	to {
 		opacity: 1;
