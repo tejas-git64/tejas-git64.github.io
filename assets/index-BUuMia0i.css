@@ -39,6 +39,7 @@ body {
 	-webkit-animation: body 0.5s ease-in;
 	animation: body 0.5s ease-in;
 	scroll-behavior: smooth;
+	background-color: #0b0015;
 }
 .animateFromLeft.animated {
 	-webkit-animation: fadeInLeft 0.5s ease;
@@ -164,6 +165,7 @@ nav .links {
 	height: auto;
 	padding: 0px 15px;
 	border-radius: 15px;
+	border: 2px solid #22003f;
 }
 nav .links {
 	height: 50px;
@@ -241,7 +243,7 @@ nav #logo {
 	justify-content: space-around;
 	align-items: center;
 	margin: 0 auto;
-	background-image: url("../svgs/wave-home.svg");
+	background-image: url("../svgs/introduction/introduction1199.svg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -308,6 +310,8 @@ h2 {
 	transition: 0.25s all ease;
 	-webkit-animation: fadeInEnlarge 1s ease-in;
 	animation: fadeInEnlarge 1s ease-in;
+	display: flex;
+	align-items: center;
 }
 .intro-text .connect a:hover {
 	transform: translate(5px);
@@ -357,7 +361,7 @@ h2 {
 #projects {
 	width: 100%;
 	height: auto;
-	background-image: url("../svgs/wave-home-portfolio.svg");
+	background-image: url("../svgs/portfolio/portfolio1199.svg");
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -368,10 +372,11 @@ h2 {
 	box-shadow: 0 -5px 20px #5f00a8;
 }
 #projects {
-	min-height: 200dvh;
+	min-height: auto;
 	max-height: -webkit-max-content;
 	max-height: -moz-max-content;
 	max-height: max-content;
+	margin-top: -1px;
 }
 #contact,
 #projects {
@@ -379,7 +384,7 @@ h2 {
 	height: auto;
 	box-shadow: none;
 	border-radius: 0;
-	background-image: url("../svgs/waves-project-landscape.svg");
+	background-image: url("../svgs/projects/projects1199.svg");
 	background-position: top;
 }
 .projects-container {
@@ -482,7 +487,7 @@ h2 {
 	height: auto;
 	box-shadow: none;
 	border-radius: 0;
-	background-image: url("../svgs/waves-about.svg");
+	background-image: url("../svgs/about/about1399.svg");
 	background-position: top;
 	position: relative;
 	background-size: cover;
@@ -504,7 +509,7 @@ h2 {
 #about h1,
 #contact h1 {
 	width: 100%;
-	background-image: url("../svgs/waves-contact-landscape.svg");
+	background-image: url("../svgs/contact/h1/h11199.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
@@ -519,7 +524,7 @@ h2 {
 #contact .top {
 	width: 100%;
 	height: 300px;
-	background-image: url("../svgs/waves-contact-top.svg");
+	background-image: url("../svgs/contact/top/top1199.svg");
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -620,19 +625,18 @@ h2 {
 	transition: all 0.25s ease;
 	-webkit-animation-delay: 0;
 	animation-delay: 0;
-	box-shadow: 1.3vw 1.3vw #006eff;
+	box-shadow: 1vw 1vw #006eff;
 	z-index: 20;
 }
 #about a:hover {
-	box-shadow: -5px -5px #006eff;
+	box-shadow: -1vw -1vw #006eff;
 	transform: scale(1.05);
 	color: #f9f9f9;
 }
 #about h1 {
-	background-image: url("../svgs/blob-about.svg");
+	background-image: url("../svgs/about/about1199.svg");
 	background-position: top;
 	padding-top: 15px;
-	padding-bottom: 30vw;
 	background-size: cover;
 	margin-top: -2px;
 }
@@ -887,7 +891,7 @@ h2 {
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("../svgs/waves-contact-bottom.svg");
+	background-image: url("../svgs/bottom-wave/bw1199.svg");
 	width: 100%;
 	padding-bottom: 200px;
 	position: absolute;
@@ -954,11 +958,12 @@ footer .bottom-links li a:hover {
 		margin: 0 auto;
 		flex-direction: column-reverse;
 		border-radius: 0;
+		background-image: url("../svgs/introduction/introduction499.svg");
 	}
 	#introduction .intro-images {
 		width: 85vw;
 		height: 85vw;
-		margin-top: 20px;
+		margin: 3dvh 0;
 	}
 	#introduction .intro-images img {
 		width: 65%;
@@ -975,20 +980,20 @@ footer .bottom-links li a:hover {
 		align-items: center;
 	}
 	#introduction .intro-text header h2 {
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 		margin-right: 5px;
 	}
 	#introduction .intro-text header h1 {
-		font-size: 1.5em;
+		font-size: 1.75rem;
 	}
 	#introduction .intro-text b {
-		font-size: 1rem;
+		font-size: 1.25rem;
 		text-align: center;
 		line-height: 1.5rem;
 		padding: 0 10px;
 	}
 	#introduction .intro-text p {
-		font-size: 0.75rem;
+		font-size: 1rem;
 		margin-top: 10px;
 	}
 	#introduction .intro-text .connect {
@@ -1002,6 +1007,7 @@ footer .bottom-links li a:hover {
 	}
 	#portfolio {
 		padding-top: 25px;
+		background-image: url("../svgs/portfolio/portfolio449.svg");
 	}
 	#portfolio h1 {
 		font-size: 1.75rem;
@@ -1070,6 +1076,7 @@ footer .bottom-links li a:hover {
 	#projects {
 		padding-top: 15px;
 		padding-bottom: 10px;
+		background-image: url("../svgs/projects/projects449.svg");
 	}
 	.projects-container {
 		height: auto;
@@ -1124,11 +1131,19 @@ footer .bottom-links li a:hover {
 		padding: 50vw 0 40vw 0;
 	}
 	#about {
-		padding: 120px 0 150px 0;
+		padding: 0;
 		height: auto;
+		background-image: url("../svgs/about/about449.svg");
+		background-position: top;
+		padding: 100px 0;
+		padding-bottom: 150px;
+	}
+	#about h1 {
+		padding: 15px 0 0 0;
 	}
 	#about .about-me {
 		height: auto;
+		justify-content: flex-start;
 	}
 	#about .about-me img {
 		width: 235px;
@@ -1149,21 +1164,22 @@ footer .bottom-links li a:hover {
 		word-spacing: normal;
 		padding: 10px;
 		margin-top: -10px;
+		text-align: left;
 	}
 	#about a {
 		font-size: 0.75rem;
 		padding: 12px 20px;
 	}
 	#contact {
-		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash320.webp");
+		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash450.webp");
 	}
 	#contact h1 {
-		background-image: url("../svgs/waves-contact.svg");
+		background-image: url("../svgs/contact/h1/h1449.svg");
 		font-size: 1.25rem;
-		margin-top: 0;
+		margin-top: -20px;
 	}
 	#contact .top {
-		background-image: url("../svgs/waves-contact-top.svg");
+		background-image: url("../svgs/contact/top/top449.svg");
 		position: absolute;
 		top: -20px;
 		left: 0;
@@ -1173,6 +1189,7 @@ footer .bottom-links li a:hover {
 		width: 90%;
 		padding-bottom: 30px;
 		border-radius: 10px;
+		margin-top: -50px;
 	}
 	.contact-container form {
 		height: auto;
@@ -1194,6 +1211,9 @@ footer .bottom-links li a:hover {
 	.contact-container form button {
 		padding: 12px 0;
 		font-size: 0.5rem;
+	}
+	.bottom-wave {
+		background-image: url("../svgs/bottom-wave/bw449.svg");
 	}
 	footer {
 		height: 10dvh;
@@ -1243,6 +1263,7 @@ footer .bottom-links li a:hover {
 		margin: 0 auto;
 		flex-direction: column-reverse;
 		border-radius: 0;
+		background-image: url("/svgs/introduction/introduction639.svg");
 	}
 	#introduction .intro-images {
 		width: 350px;
@@ -1291,6 +1312,7 @@ footer .bottom-links li a:hover {
 	}
 	#portfolio {
 		padding-top: 25px;
+		background-image: url("/svgs/portfolio/portfolio639.svg");
 	}
 	#portfolio h1 {
 		font-size: 1.75rem;
@@ -1384,6 +1406,7 @@ footer .bottom-links li a:hover {
 	#projects {
 		padding-top: 15px;
 		padding-bottom: 10px;
+		background-image: url("/svgs/projects/projects639.svg");
 	}
 	.projects-container {
 		height: auto;
@@ -1449,12 +1472,18 @@ footer .bottom-links li a:hover {
 		padding: 50vw 0 40vw 0;
 	}
 	#about {
-		padding: 120px 0 150px 0;
+		padding: 0;
 		height: auto;
+		background-image: url("../svgs/about/about639.svg");
+		background-position: top;
+		padding: 100px 0;
+		padding-bottom: 250px;
+	}
+	#about h1 {
+		padding: 15px 0 0 0;
 	}
 	#about .about-me {
 		height: auto;
-		margin-top: 50px;
 	}
 	#about .about-me img {
 		width: 235px;
@@ -1482,20 +1511,21 @@ footer .bottom-links li a:hover {
 		padding: 12px 20px;
 	}
 	#contact {
-		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash320.webp");
+		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash600.webp");
 	}
 	#contact h1 {
-		background-image: url("../svgs/waves-contact.svg");
+		background-image: url("../svgs/contact/h1/h1639.svg");
 		font-size: 1.4rem;
-		margin-top: 0;
+		margin-top: -50px;
 		padding-bottom: 50vw;
 	}
 	#contact .top {
-		background-image: url("../svgs/waves-contact-top.svg");
+		background-image: url("../svgs/contact/top/top639.svg");
 		position: absolute;
-		top: -40px;
+		top: -60px;
 		left: 0;
-		height: 30vw;
+		height: 100px;
+		padding-bottom: 15px;
 	}
 	.contact-container {
 		width: 385px;
@@ -1535,17 +1565,20 @@ footer .bottom-links li a:hover {
 	footer .bottom-links li a {
 		font-size: 0.65rem;
 	}
+	.bottom-wave {
+		background-image: url("/svgs/bottom-wave/bw639.svg");
+	}
 	::-webkit-scrollbar {
 		width: 0;
 	}
 }
-@media screen and (min-width: 640px) and (max-width: 900px) {
+@media screen and (min-width: 640px) and (max-width: 899px) {
 	nav {
 		justify-content: space-between;
 		align-items: center;
 		width: 90%;
 		padding: 0;
-		padding-right: 13px;
+		margin: 0px auto;
 	}
 	nav .links {
 		display: flex;
@@ -1589,12 +1622,13 @@ footer .bottom-links li a:hover {
 		height: 25px;
 	}
 	nav .social {
-		width: 100px;
-		justify-content: space-around;
+		width: 120px;
+		justify-content: space-between;
 		padding: 8px 0px;
+		z-index: 40;
 	}
 	.social a:nth-child(2) {
-		margin: 0 15px;
+		margin: 0;
 	}
 	.social a img {
 		width: 20px;
@@ -1604,15 +1638,16 @@ footer .bottom-links li a:hover {
 		margin-left: -85px;
 	}
 	#introduction {
-		width: 92.5%;
-		margin: -10px auto 80px;
+		width: 87.5%;
+		margin: 0px auto 80px;
 		height: 50vw;
 		flex-direction: row;
-		background-image: url("../svgs/wave-home-landscape.svg");
+		background-image: url("../svgs/introduction/introduction899.svg");
 		background-position: top;
 		padding: 0;
 		align-items: center;
 		justify-content: space-between;
+		background-size: cover;
 		padding-right: 20px;
 	}
 	#introduction .intro-images {
@@ -1668,7 +1703,7 @@ footer .bottom-links li a:hover {
 		font-size: 1.75rem;
 	}
 	#portfolio .stack-header {
-		margin: 50px auto 10px auto;
+		margin: 50px auto 30px auto;
 		justify-content: center;
 		align-items: center;
 	}
@@ -1759,6 +1794,7 @@ footer .bottom-links li a:hover {
 	#projects {
 		padding-top: 15px;
 		padding-bottom: 10px;
+		background-image: url("/svgs/projects/projects899.svg");
 	}
 	.projects-container {
 		height: auto;
@@ -1822,16 +1858,21 @@ footer .bottom-links li a:hover {
 		padding: 50vw 0 40vw 0;
 	}
 	#about {
-		padding: 120px 0 150px 0;
+		padding: 0;
 		height: auto;
+		background-image: url("../svgs/about/about899.svg");
+		background-position: top;
+		padding: 50px 0;
+		padding-bottom: 200px;
 	}
 	#about h1 {
-		padding-bottom: 25vw;
+		padding: 15px 0 0 0;
+		margin-bottom: 20px;
 	}
 	#about .about-me {
 		width: 90%;
 		height: auto;
-		padding: 20vw 0 80px 0;
+		padding: 10vw 0 80px 0;
 		flex-direction: row;
 		justify-content: space-between;
 		max-width: 750px;
@@ -1863,23 +1904,26 @@ footer .bottom-links li a:hover {
 		padding: 12px 20px;
 	}
 	#contact {
-		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash320.webp");
+		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash_landscape900.webp");
+		padding: 200px 0;
 	}
 	#contact h1 {
-		background-image: url("../svgs/waves-contact.svg");
+		background-image: url("../svgs/contact/h1/h1899.svg");
 		font-size: 1.55rem;
 		margin-top: 0;
-		padding-bottom: 50vw;
+		padding-bottom: 15vw;
+		background-size: cover;
 	}
 	#contact .top {
-		background-image: url("../svgs/waves-contact-top.svg");
+		background-image: url("../svgs/contact/top/top899.svg");
+		background-size: contain;
 		position: absolute;
-		top: -80px;
+		top: -16vw;
 		left: 0;
 		height: 25vw;
 	}
 	.contact-container {
-		width: 400px;
+		width: 500px;
 		padding-bottom: 30px;
 		border-radius: 10px;
 	}
@@ -1887,25 +1931,907 @@ footer .bottom-links li a:hover {
 		height: auto;
 	}
 	.contact-container form h2 {
-		font-size: 1.35rem;
+		font-size: 1.5rem;
 		margin: 0px 30px 30px;
 		font-weight: 900;
 	}
 	.contact-container form label {
-		font-size: 0.75rem;
+		font-size: 0.85rem;
 		margin-top: 2px;
 	}
 	.contact-container form input {
 		margin-bottom: 5px;
-		font-size: 0.85rem;
+		font-size: 0.95rem;
 		font-weight: 600;
 	}
 	.contact-container form textarea {
 		min-height: 100px;
 	}
 	.contact-container form button {
+		padding: 14px 0;
+		font-size: 0.6rem;
+	}
+	footer {
+		height: 10dvh;
+	}
+	footer .bottom-links {
+		width: 80%;
+		margin: 0 auto;
+		justify-content: space-evenly;
+		padding-bottom: 25px;
+	}
+	footer .bottom-links li a {
+		font-size: 0.65rem;
+	}
+	.bottom-wave {
+		background-image: url("../svgs/bottom-wave/bw899.svg");
+		background-size: contain;
+	}
+	::-webkit-scrollbar {
+		width: 0;
+	}
+}
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+	nav {
+		justify-content: space-between;
+		align-items: center;
+		width: 92.5%;
+		padding: 0;
+	}
+	nav .links {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+		width: 250px;
+	}
+	#mobile-container {
+		width: 60px;
+		height: 100%;
+		background-color: transparent;
+		display: flex;
+		flex-direction: column;
+		left: unset;
+		right: 0.8vw;
+		top: 0;
+	}
+	.mobile-nav {
+		width: 50px;
+		height: 300px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		background-color: #0d0017;
+		justify-content: space-between;
+		box-shadow: none;
+		padding: 15px 0px;
+	}
+	.mobile-nav a {
+		width: 35px;
+		height: 30px;
+		font-size: 0px;
+		margin: 0px auto;
+	}
+	.mobile-nav a:nth-child(2) img {
+		width: 25px;
+		height: 25px;
+	}
+	.mobile-nav a img {
+		width: 30px;
+		height: 30px;
+	}
+	nav .social {
+		width: 140px;
+		justify-content: space-between;
+		padding: 8px 0px;
+		z-index: 40;
+	}
+	.social a:nth-child(2) {
+		margin: 0;
+	}
+	.social a img {
+		width: 20px;
+	}
+	#logo {
+		padding: 0px 10px;
+		margin-left: -85px;
+	}
+	#introduction {
+		width: 87.5%;
+		margin: 0px auto 80px;
+		height: 45vw;
+		flex-direction: row;
+		background-image: url("../svgs/introduction/introduction1199.svg");
+		background-position: top;
+		padding: 0 2.5vw;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#introduction .intro-images {
+		width: 35vw;
+		margin: 0;
+		padding: 10px 0;
+	}
+	#introduction .intro-images img {
+		width: 25vw;
+		height: auto;
+		background-size: contain;
+		padding-bottom: 10px;
+	}
+	#introduction .intro-text {
+		width: 40vw;
+		justify-content: center;
+		align-items: flex-start;
+		text-align: center;
+		height: 25vw;
+		padding-left: 35px;
+	}
+	#introduction .intro-text header {
+		align-items: center;
+	}
+	#introduction .intro-text header h2 {
+		font-size: 3.5vw;
+		margin-right: 5px;
+	}
+	#introduction .intro-text header h1 {
+		font-size: 3.7vw;
+	}
+	#introduction .intro-text b {
+		font-size: 3.2vw;
+		line-height: 3.5vw;
+		text-align: left;
+	}
+	#introduction .intro-text p {
+		font-size: 1.5vw;
+		margin-top: 10px;
+	}
+	#introduction .intro-text .connect {
+		justify-content: flex-start;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	#introduction .intro-text .connect a {
+		padding: 7.5px 20px;
+		font-size: 1rem;
+	}
+	#portfolio {
+		padding-top: 25px;
+		padding-bottom: 150px;
+		background-image: url("../svgs/portfolio/portfolio1199.svg");
+	}
+	#portfolio h1 {
+		font-size: 1.85rem;
+	}
+	#portfolio .stack-header {
+		margin: 50px auto 30px auto;
+		justify-content: center;
+		align-items: center;
+	}
+	#portfolio .stack-header p {
+		font-size: 1.3rem;
+	}
+	#portfolio .stack-header img {
+		width: 25px;
+		height: 25px;
+		margin-left: 15px;
+		margin-bottom: 0;
+	}
+	#portfolio .stack-heading {
+		font-size: 1.5rem;
+	}
+	#portfolio .role {
+		width: 93.5%;
+	}
+	#portfolio .role b {
+		font-size: 0.95rem;
+	}
+	#portfolio .role p {
+		font-size: 0.85rem;
+	}
+	#portfolio .main,
+	#portfolio .abstraction,
+	#portfolio .vanilla,
+	#portfolio .tools,
+	#portfolio .platform,
+	#portfolio .backends {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
+	#portfolio .tech-stacks,
+	#portfolio .backends,
+	#portfolio .platforms {
+		width: 100%;
+		margin: 0 auto;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	#portfolio .tech-stacks {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		gap: 0;
+		justify-content: center;
+	}
+	#portfolio .tech-stacks ul {
+		width: -webkit-min-content;
+		width: -moz-min-content;
+		width: min-content;
+	}
+	#portfolio .tech-stacks li {
+		padding: 8px 6px;
+		border-radius: 20px;
+		margin: 0 2.5vw;
+	}
+	#portfolio .platforms li,
+	#portfolio .backends li {
+		width: 50px;
+		padding: 8px;
+		border-radius: 20px;
+		margin: 0 2.5vw;
+	}
+	#portfolio .tech-stacks li p {
+		font-size: 0.75rem;
+		padding: 0;
+	}
+	#portfolio .backends li p,
+	#portfolio .platforms li p {
+		font-size: 0.75rem;
+		padding: 0;
+	}
+	#portfolio .backends li {
+		padding: 8px 10px;
+	}
+	#portfolio .tech-stacks li img {
+		width: 35px;
+		height: 35px;
+	}
+	.platforms ul {
+		padding: 0;
+		margin: 0;
+	}
+	#roles {
+		width: 95%;
+		height: auto;
+		margin-top: -10px;
+	}
+	#roles .role {
+		height: -webkit-max-content;
+		height: -moz-max-content;
+		height: max-content;
+	}
+	#roles b {
+		font-size: 1rem;
+	}
+	#roles p {
+		font-size: 0.75rem;
+		font-family: monospace;
+	}
+	.abstraction,
+	.main,
+	.vanilla {
+		padding-left: 0;
+	}
+	#projects {
+		padding-top: 20px;
+		padding-bottom: 50px;
+		height: auto;
+		background-image: url("../svgs/projects/projects1199.svg");
+	}
+	#projects h1 {
+		padding-bottom: 50px;
+	}
+	.projects-container {
+		height: auto;
+	}
+	.projects-container .project {
+		margin-bottom: 80px;
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: auto;
+	}
+	.projects-container .project .main-summary {
+		height: auto;
+	}
+	.project #project1,
+	.project #project3 {
+		flex-direction: column;
+		height: auto;
+	}
+	.project #project2,
+	.project #project4 {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	.project .main-title {
+		font-size: 1.25rem;
+	}
+	.project .main-content {
+		width: 50%;
+	}
+	#project3 .main-content img,
+	#project4 .main-content img,
+	.project .main-content img {
+		max-height: 229px;
+		max-width: 452px;
+		width: 100%;
+		height: 100%;
+	}
+	#project3 .main-content .github,
+	#project4 .main-content .github {
+		width: 20px;
+		height: 20px;
+	}
+	.project .main-description {
+		width: 40%;
+		justify-content: center;
+		align-items: flex-start;
+		text-align: justify;
+		padding: 0 50px;
+		margin-top: -100px;
+	}
+	.main-description .main-title {
+		font-size: 1.5rem;
+	}
+	.main-description .main-summary {
+		font-size: 0.85rem;
+	}
+	.projects-container p {
+		font-size: 0.75rem;
+		margin-bottom: 5px;
+	}
+	#about,
+	#contact {
+		margin-top: 0;
+		padding: 0;
+		background-position: right;
+		background-size: cover;
+	}
+	#contact {
+		background-size: cover;
+		background-position: bottom;
+		padding: 50vw 0 40vw 0;
+	}
+	#about {
+		padding: 0;
+		height: auto;
+		background-image: url("../svgs/about/about1199.svg");
+		background-position: top;
+		padding: 50px 0;
+		padding-bottom: 200px;
+	}
+	#about h1 {
+		padding: 15px 0 0 0;
+		margin-bottom: 20px;
+	}
+	#about .about-me {
+		width: 90%;
+		height: auto;
+		padding: 10vw 0 80px 0;
+		flex-direction: row;
+		justify-content: space-around;
+		max-width: 900px;
+	}
+	#about .about-me img {
+		width: 250px;
+		height: 250px;
+		background-color: #006eff;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	#about .img-back {
+		-webkit-filter: drop-shadow(1.5vw 1vw 0px #006eff);
+		filter: drop-shadow(1.5vw 1vw 0px #006eff);
+		height: auto;
+		margin: 50px;
+		margin-left: 0px;
+	}
+	#about .about-me p {
+		width: 450px;
+		height: auto;
+		font-size: 0.8rem;
+		margin-bottom: 0px;
+		word-spacing: normal;
+		padding: 10px 12px;
+		text-align: justify;
+		margin-left: 15px;
+	}
+	#about a {
+		font-size: 0.85rem;
+		padding: 12px 20px;
+		margin-right: -20px;
+	}
+	#contact {
+		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash_landscape1200.webp");
+		padding: 250px 0;
+	}
+	#contact h1 {
+		background-image: url("../svgs/contact/h1/h11199.svg");
+		font-size: 1.75rem;
+		margin-top: -20px;
+		padding-bottom: 20vw;
+		background-position: center;
+		background-size: contain;
+	}
+	#contact .top {
+		background-image: url("../svgs/contact/top/top1199.svg");
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		top: -70px;
+		left: 0;
+		height: 15vw;
+	}
+	.contact-container {
+		width: 550px;
+		padding-bottom: 30px;
+		border-radius: 10px;
+	}
+	.contact-container form {
+		height: auto;
+	}
+	.contact-container form h2 {
+		font-size: 1.5rem;
+		margin: 0px 30px 30px;
+		font-weight: 900;
+	}
+	.contact-container form label {
+		font-size: 0.85rem;
+		margin-top: 2px;
+	}
+	.contact-container form input {
+		margin-bottom: 5px;
+		font-size: 0.95rem;
+		font-weight: 600;
+	}
+	.contact-container form textarea {
+		min-height: 150px;
+		font-size: 0.95rem;
+	}
+	.contact-container form button {
 		padding: 12px 0;
-		font-size: 0.5rem;
+		font-size: 0.75rem;
+	}
+	footer {
+		height: 10dvh;
+	}
+	footer .bottom-links {
+		width: 80%;
+		margin: 0 auto;
+		justify-content: space-evenly;
+		padding-bottom: 25px;
+	}
+	footer .bottom-links li a {
+		font-size: 0.65rem;
+	}
+	.bottom-wave {
+		background-image: url("../svgs/bottom-wave/bw1199.svg");
+	}
+	::-webkit-scrollbar {
+		width: 0;
+	}
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+	nav {
+		justify-content: space-between;
+		align-items: center;
+		width: 92.5%;
+		padding: 0;
+	}
+	nav .links {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+		width: 250px;
+	}
+	#mobile-container {
+		width: 60px;
+		height: 100%;
+		background-color: transparent;
+		display: flex;
+		flex-direction: column;
+		left: unset;
+		right: 0.8vw;
+		top: 0;
+	}
+	.mobile-nav {
+		width: 50px;
+		height: 300px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		background-color: #0d0017;
+		justify-content: space-between;
+		box-shadow: none;
+		padding: 15px 0px;
+	}
+	.mobile-nav a {
+		width: 35px;
+		height: 30px;
+		font-size: 0px;
+		margin: 0px auto;
+	}
+	.mobile-nav a:nth-child(2) img {
+		width: 25px;
+		height: 25px;
+	}
+	.mobile-nav a img {
+		width: 30px;
+		height: 30px;
+	}
+	nav .social {
+		width: 140px;
+		justify-content: space-between;
+		padding: 8px 0px;
+		z-index: 40;
+	}
+	.social a:nth-child(2) {
+		margin: 0;
+	}
+	.social a img {
+		width: 20px;
+	}
+	#logo {
+		padding: 0px 10px;
+		margin-left: -85px;
+	}
+	#introduction {
+		width: 87.5%;
+		margin: 0px auto 80px;
+		height: 45vw;
+		flex-direction: row;
+		background-image: url("../svgs/introduction/introduction1399.svg");
+		background-position: top;
+		padding: 0 2.5vw;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#introduction .intro-images {
+		width: 35vw;
+		margin: 0;
+		padding: 10px 0;
+	}
+	#introduction .intro-images img {
+		width: 23.5vw;
+		height: auto;
+		background-size: contain;
+		padding-bottom: 20px;
+	}
+	#introduction .intro-text {
+		width: 40vw;
+		justify-content: center;
+		align-items: flex-start;
+		text-align: center;
+		height: 25vw;
+		padding-left: 35px;
+	}
+	#introduction .intro-text header {
+		align-items: center;
+	}
+	#introduction .intro-text header h2 {
+		font-size: 3.5vw;
+		margin-right: 5px;
+	}
+	#introduction .intro-text header h1 {
+		font-size: 3.7vw;
+	}
+	#introduction .intro-text b {
+		font-size: 3.2vw;
+		line-height: 3.5vw;
+		text-align: left;
+	}
+	#introduction .intro-text p {
+		font-size: 1.5vw;
+		margin-top: 10px;
+	}
+	#introduction .intro-text .connect {
+		justify-content: flex-start;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	#introduction .intro-text .connect a {
+		padding: 7.5px 20px;
+		font-size: 1rem;
+	}
+	#portfolio {
+		padding-top: 25px;
+		padding-bottom: 150px;
+		background-image: url("../svgs/portfolio/portfolio1399.svg");
+	}
+	#portfolio h1 {
+		font-size: 1.85rem;
+	}
+	#portfolio .stack-header {
+		margin: 50px auto 30px auto;
+		justify-content: center;
+		align-items: center;
+	}
+	#portfolio .stack-header p {
+		font-size: 1.3rem;
+	}
+	#portfolio .stack-header img {
+		width: 25px;
+		height: 25px;
+		margin-left: 15px;
+		margin-bottom: 0;
+	}
+	#portfolio .stack-heading {
+		font-size: 1.5rem;
+	}
+	#portfolio .role {
+		width: 93.5%;
+	}
+	#portfolio .role b {
+		font-size: 0.95rem;
+	}
+	#portfolio .role p {
+		font-size: 0.85rem;
+	}
+	#portfolio .main,
+	#portfolio .abstraction,
+	#portfolio .vanilla,
+	#portfolio .tools,
+	#portfolio .platform,
+	#portfolio .backends {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
+	#portfolio .tech-stacks,
+	#portfolio .backends,
+	#portfolio .platforms {
+		width: 100%;
+		margin: 0 auto;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	#portfolio .tech-stacks {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		gap: 0;
+		justify-content: center;
+	}
+	#portfolio .tech-stacks ul {
+		width: -webkit-min-content;
+		width: -moz-min-content;
+		width: min-content;
+	}
+	#portfolio .tech-stacks li {
+		padding: 8px 6px;
+		border-radius: 20px;
+		margin: 0 2.5vw;
+	}
+	#portfolio .platforms li,
+	#portfolio .backends li {
+		width: 50px;
+		padding: 8px;
+		border-radius: 20px;
+		margin: 0 2.5vw;
+	}
+	#portfolio .tech-stacks li p {
+		font-size: 0.75rem;
+		padding: 0;
+	}
+	#portfolio .backends li p,
+	#portfolio .platforms li p {
+		font-size: 0.75rem;
+		padding: 0;
+	}
+	#portfolio .backends li {
+		padding: 8px 10px;
+	}
+	#portfolio .tech-stacks li img {
+		width: 35px;
+		height: 35px;
+	}
+	.platforms ul {
+		padding: 0;
+		margin: 0;
+	}
+	#roles {
+		width: 95%;
+		height: auto;
+		margin-top: -10px;
+	}
+	#roles .role {
+		height: -webkit-max-content;
+		height: -moz-max-content;
+		height: max-content;
+	}
+	#roles b {
+		font-size: 1rem;
+	}
+	#roles p {
+		font-size: 0.75rem;
+		font-family: monospace;
+	}
+	.abstraction,
+	.main,
+	.vanilla {
+		padding-left: 0;
+	}
+	#projects {
+		padding-top: 20px;
+		padding-bottom: 50px;
+		height: auto;
+	}
+	#projects h1 {
+		padding-bottom: 50px;
+	}
+	.projects-container {
+		height: auto;
+	}
+	.projects-container .project {
+		margin-bottom: 80px;
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: auto;
+	}
+	.projects-container .project .main-summary {
+		height: auto;
+	}
+	.project #project1,
+	.project #project3 {
+		flex-direction: column;
+		height: auto;
+	}
+	.project #project2,
+	.project #project4 {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	.project .main-title {
+		font-size: 1.25rem;
+	}
+	.project .main-content {
+		width: 50%;
+	}
+	#project3 .main-content img,
+	#project4 .main-content img,
+	.project .main-content img {
+		max-height: 229px;
+		max-width: 452px;
+		width: 100%;
+		height: 100%;
+	}
+	#project3 .main-content .github,
+	#project4 .main-content .github {
+		width: 20px;
+		height: 20px;
+	}
+	.project .main-description {
+		width: 40%;
+		justify-content: center;
+		align-items: flex-start;
+		text-align: justify;
+		padding: 0 50px;
+		margin-top: -100px;
+	}
+	.main-description .main-title {
+		font-size: 1.5rem;
+	}
+	.main-description .main-summary {
+		font-size: 0.85rem;
+	}
+	.projects-container p {
+		font-size: 0.75rem;
+		margin-bottom: 5px;
+	}
+	#about,
+	#contact {
+		margin-top: 0;
+		padding: 0;
+		background-position: right;
+		background-size: cover;
+	}
+	#contact {
+		background-size: cover;
+		background-position: bottom;
+		padding: 230px 0 300px 0;
+	}
+	#about {
+		padding: 0;
+		height: auto;
+		background-image: url("../svgs/about/about1399.svg");
+		background-position: top;
+		padding: 50px 0;
+		padding-bottom: 250px;
+	}
+	#about h1 {
+		padding: 15px 0 0 0;
+		margin-bottom: 20px;
+	}
+	#about .about-me {
+		width: 90%;
+		height: 600px;
+		padding: 50px 0 0 0;
+		flex-direction: row;
+		justify-content: space-around;
+		max-width: 1000px;
+	}
+	#about .about-me img {
+		width: 300px;
+		height: 300px;
+		background-color: #006eff;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	#about .img-back {
+		-webkit-filter: drop-shadow(1.5vw 1vw 0px #006eff);
+		filter: drop-shadow(1.5vw 1vw 0px #006eff);
+		height: auto;
+		margin: 50px;
+		margin-left: 0px;
+	}
+	#about .about-me p {
+		width: 450px;
+		height: auto;
+		font-size: 0.9rem;
+		margin-bottom: 0px;
+		word-spacing: normal;
+		padding: 12px 14px;
+		text-align: left;
+		margin-left: 15px;
+	}
+	#about a {
+		font-size: 0.85rem;
+		padding: 12px 20px;
+		margin-right: -20px;
+	}
+	#contact {
+		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash_landscape1200.webp");
+	}
+	#contact h1 {
+		background-image: url("../svgs/contact/h1/h11399.svg");
+		font-size: 1.55rem;
+		margin-top: 0;
+		padding-bottom: 5vw;
+		background-size: contain;
+		height: 10vw;
+	}
+	#contact .top {
+		background-image: url("../svgs/contact/top/top1399.svg");
+		position: absolute;
+		top: -250px;
+		left: 0;
+		height: 25vw;
+		background-size: contain;
+	}
+	.contact-container {
+		width: 550px;
+		padding-bottom: 30px;
+		border-radius: 10px;
+	}
+	.contact-container form {
+		height: auto;
+	}
+	.contact-container form h2 {
+		font-size: 1.5rem;
+		margin: 0px 30px 30px;
+		font-weight: 900;
+	}
+	.contact-container form label {
+		font-size: 0.85rem;
+		margin-top: 2px;
+	}
+	.contact-container form input {
+		margin-bottom: 5px;
+		font-size: 0.95rem;
+		font-weight: 600;
+	}
+	.contact-container form textarea {
+		min-height: 150px;
+		font-size: 0.95rem;
+	}
+	.contact-container form button {
+		padding: 12px 0;
+		font-size: 0.75rem;
 	}
 	footer {
 		height: 10dvh;
@@ -1923,634 +2849,480 @@ footer .bottom-links li a:hover {
 		width: 0;
 	}
 }
-@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+@media screen and (min-width: 1400px) {
+	#app {
+		width: 1399px;
+		margin: 0px auto;
+		background-color: #0b0015;
+	}
 	nav {
-		height: 50px;
-		padding: 10px 0;
 		justify-content: space-between;
 		align-items: center;
-	}
-	nav .menu {
-		display: none;
+		width: 97.5%;
+		padding: 0;
 	}
 	nav .links {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0 10px;
+		justify-content: space-between;
+		padding: 0;
+		width: 235px;
 	}
-	nav .links a {
-		margin-right: 1.5vw;
-	}
-	nav .mobile-nav {
-		display: none;
-	}
-	nav #logo {
-		margin-left: -50px;
-	}
-	nav .social {
-		display: block;
-	}
-	nav .social {
+	#mobile-container {
+		width: 60px;
+		height: 100%;
+		background-color: transparent;
 		display: flex;
-		align-items: center;
-		width: 18%;
-		justify-content: center;
+		flex-direction: column;
+		left: unset;
+		right: 0.5vw;
+		top: 0;
 	}
-	nav .social a:nth-child(2) {
-		margin: 0 2.5vw;
-	}
-	#logo {
-		width: 80px;
-		height: 80px;
-	}
-	#introduction {
-		width: 90%;
-		margin: 20px auto 100px;
-		height: 45dvh;
-		flex-direction: row;
-		background-image: url("../svgs/wave-home-landscape.svg");
-		background-position: bottom;
-	}
-	#introduction .intro-images {
-		width: 80vw;
-		margin-right: 0;
-		border-radius: 35vw 25vw 20vw 20vw;
-		padding: 10px 0;
-	}
-	#introduction .intro-images img {
-		width: 26vw;
-		height: auto;
-	}
-	#introduction .intro-text {
-		width: 80%;
-		justify-content: space-around;
-		align-items: flex-start;
-		text-align: left;
-		margin-left: 50px;
-		margin-top: 130px;
-	}
-	#introduction .intro-text header {
-		align-items: center;
-	}
-	#introduction .intro-text header h2 {
-		font-size: 3.3vw;
-		margin-right: 5px;
-	}
-	#introduction .intro-text header h1 {
-		font-size: 3.5vw;
-	}
-	#introduction .intro-text b {
-		font-size: 3vw;
-		line-height: 3.5vw;
-		text-align: left;
-	}
-	#introduction .intro-text p {
-		font-size: 1.5vw;
-		margin-top: 10px;
-	}
-	#introduction .intro-text .connect {
-		justify-content: flex-start;
-		margin-top: 25px;
-	}
-	#introduction .intro-text .connect a {
-		padding-left: 20px;
-	}
-	#portfolio h1 {
-		font-size: 35px;
-		margin-bottom: 80px;
-	}
-	#portfolio .stack-header {
-		margin-bottom: 0;
-		width: 85%;
-		margin-top: 30px;
-	}
-	#portfolio .stack-header p {
-		font-size: 23px;
-	}
-	#portfolio .stack-header img {
-		width: 30px;
-		height: 30px;
-		margin-left: 20px;
-		margin-top: -5px;
-	}
-	#portfolio .backends,
-	#portfolio .platforms,
-	#portfolio .tech-stacks {
-		width: 90%;
-		display: flex;
-		margin: 0 auto;
-		gap: 0;
-		justify-content: center;
-	}
-	#portfolio .tech-stacks li {
-		padding: 5px 5px 10px;
-	}
-	#portfolio .tech-stacks li p {
-		font-size: 12px;
-	}
-	#portfolio .tech-stacks li img {
+	.mobile-nav {
 		width: 50px;
-		height: 50px;
-	}
-	#portfolio .platforms li {
-		padding: 20px 23px;
-		margin: 30px 25px;
-	}
-	#portfolio .backends li {
-		padding: 18px 20px;
-		margin: 30px 25px;
-	}
-	#portfolio .exp {
-		margin-top: 50px;
-	}
-	#roles {
-		width: 99%;
-		margin-top: 5px;
-		margin-bottom: 40px;
-		height: auto;
-	}
-	#roles .role {
-		width: 83%;
-		margin: 0 auto;
-		height: auto;
-		position: relative;
-	}
-	#roles h3 {
-		font-size: 16px;
-	}
-	#roles p {
-		font-size: 14px;
-		font-family: monospace;
-	}
-	.platforms .backends,
-	.platforms .platform,
-	.platforms .tools,
-	.tech-stacks .main,
-	.tech-stacks .vanilla {
-		display: flex;
+		height: 300px;
 		padding: 0;
-		margin: 0;
-	}
-	.tech-stacks .abstraction {
 		display: flex;
-		flex-direction: row;
-		padding: 0;
-		margin: 0;
-	}
-	#projects {
-		padding-bottom: 30dvw;
-	}
-	.project .main-content img {
-		height: 23vw;
-		width: 40vw;
-	}
-	#project2 .main-description,
-	#project4 .main-description,
-	.project .main-description {
-		width: 40%;
-		height: 27dvh;
-		margin: 0 auto;
-		justify-content: center;
-		align-items: flex-start;
-		text-align: justify;
-	}
-	.projects-container p {
-		font-size: 16px;
-		margin-bottom: 10px;
-	}
-	.main-description .main-summary {
-		height: auto;
-	}
-	#about h1 {
-		padding-bottom: 12vw;
-		padding-top: 0;
-		background-image: url("../svgs/blob-about-landscape.svg");
-	}
-	#about {
-		height: 160dvh;
-		padding-bottom: 150px;
-	}
-	#about .about-me {
-		padding: 20px 0;
-		margin-top: 150px;
-		height: 110dvh;
-	}
-	#about .about-me img {
-		width: 400px;
-		height: 400px;
-		top: 10px;
-		left: 3vw;
-		-webkit-clip-path: polygon(
-			25% 0%,
-			75% 0%,
-			100% 50%,
-			75% 100%,
-			25% 100%,
-			0% 50%
-		);
-		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		flex-direction: column;
+		background-color: #1a002e;
+		justify-content: space-between;
+		box-shadow: none;
+		padding: 15px 0px;
 		border: none;
 	}
-	#about .about-me p {
-		width: 500px;
-		height: auto;
-		right: 6vw;
-		font-size: 15px;
-	}
-	#about a {
-		font-size: 16px;
-		box-shadow: 1vw 1vw #006eff;
-	}
-	#contact {
-		height: 120dvh;
-		margin-top: 0;
-		padding: 40px 0 80px;
-		justify-content: center;
-		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash_landscape900.webp");
-	}
-	#contact h1 {
-		background-image: url("../svgs/wave-contact-landscape.svg");
-		padding-bottom: 18vw;
-		padding-top: 0;
-		font-size: 3vw;
-		margin-top: 0;
-	}
-	#contact .top {
-		height: 50px;
-		background-image: url("../svgs/waves-contact-top-landscape.svg");
-		position: absolute;
-		top: -180px;
-		left: 0;
-		height: 20vw;
-	}
-	.contact-container {
-		width: 600px;
-		padding-bottom: 30px;
-		border-radius: 10px;
-	}
-	.contact-container form {
-		height: 550px;
-		width: 80%;
-	}
-	.contact-container form h2 {
-		font-size: 25px;
-		margin: 10px 30px 30px;
-		font-weight: 900;
-	}
-	.contact-container form label {
-		font-size: 16px;
-		margin-top: 2px;
-	}
-	.contact-container form input {
-		margin-bottom: 10px;
-		font-size: 16px;
-	}
-	.contact-container form button {
-		padding: 16px 0;
-		font-size: 15px;
-	}
-	#contact .bottom-wave {
-		padding: 20vw 0;
-		background-image: url("../svgs/waves-contact-bottom-landscape.svg");
-	}
-	footer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: auto;
-		padding-bottom: 30px;
-		flex-direction: column;
-	}
-	footer a #logo {
-		margin: 0;
-	}
-	footer .bottom-links {
-		width: 50%;
-	}
-}
-@media screen and (min-width: 1200px) {
-	nav {
-		height: 50px;
-		padding: 10px 0;
-		justify-content: space-between;
-		align-items: center;
-	}
-	nav .menu {
-		display: none;
-	}
-	nav .mobile-nav {
-		display: none;
-	}
-	nav .links {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0 15px;
-	}
-	nav .links a {
-		margin-right: 2vw;
-	}
-	nav .social {
-		display: block;
-	}
-	nav .social {
-		display: flex;
-		align-items: center;
-		width: 180px;
-		justify-content: center;
-	}
-	nav .social a:nth-child(2) {
-		margin: 0 2vw;
-	}
-	#logo {
-		width: 80px;
-		height: 80px;
-		margin-right: 80px;
-	}
-	#introduction {
-		width: 90%;
-		margin: 30px auto 80px;
-		height: 35vw;
-		flex-direction: row;
-		background-image: url("../svgs/wave-home-landscape.svg");
-		background-position: center;
-	}
-	#introduction .intro-images {
-		width: 80vw;
-		margin-right: 0;
-		height: 35vw;
-		border-radius: 35vw 55vw 30vw 40vw;
-	}
-	#introduction .intro-images img {
-		border-radius: 50px;
-		padding-top: 3vw;
-		width: 22.5vw;
-	}
-	#introduction .intro-text {
-		width: 80%;
-		justify-content: space-around;
-		align-items: flex-start;
-		text-align: left;
-		margin-left: 5vw;
-		margin-top: 120px;
-	}
-	#introduction .intro-text header {
-		align-items: center;
-	}
-	#introduction .intro-text header h2 {
-		font-size: 3.3vw;
-		margin-right: 5px;
-	}
-	#introduction .intro-text header h1 {
-		font-size: 3vw;
-	}
-	#introduction .intro-text b {
-		font-size: 2.5vw;
-		line-height: 2.5vw;
-		text-align: left;
-		margin-top: -5px;
-	}
-	#introduction .intro-text p {
-		font-size: 1.3vw;
-		margin-top: 10px;
-	}
-	#introduction .intro-text .connect {
-		justify-content: flex-start;
-		margin-top: 25px;
-	}
-	#introduction .intro-text .connect a {
-		font-size: 18px;
-		padding-left: 20px;
-		margin-right: 2vw;
-	}
-	.role p {
-		font-family: monospace;
-		font-size: 14px;
-	}
-	#portfolio h1 {
-		font-size: 35px;
-		margin-bottom: 80px;
-		padding-left: 20px;
-	}
-	#portfolio .stack-header {
-		margin: 50px auto;
-		width: 85%;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-	}
-	#portfolio .stack-header p {
-		font-size: 25px;
-	}
-	#portfolio .stack-header img {
-		width: 30px;
+	.mobile-nav a {
+		width: 35px;
 		height: 30px;
-		margin-left: 20px;
-		margin-top: -5px;
+		font-size: 0px;
+		margin: 0px auto;
 	}
-	#portfolio .backends,
-	#portfolio .platforms,
-	#portfolio .tech-stacks {
-		width: 90%;
-		display: flex;
-		flex-direction: row;
-		margin: 0 auto 100px;
-		gap: 0;
-		justify-content: center;
-	}
-	#portfolio .tech-stacks li {
-		margin: 0 2.5vw;
-		padding: 5px 5px 10px;
-	}
-	#portfolio .platforms li {
-		padding: 20px 23px;
-		margin: 0 2.5vw;
-	}
-	#portfolio .backends li {
-		padding: 18px 20px;
-		margin: 0 2.5vw;
-	}
-	#portfolio .tech-stacks li p {
-		font-size: 12px;
-	}
-	#portfolio .tech-stacks li img {
-		width: 50px;
-		height: 50px;
-	}
-	.platforms .backends,
-	.platforms .platform,
-	.platforms .tools,
-	.tech-stacks .main,
-	.tech-stacks .vanilla {
-		display: flex;
-		padding: 0;
-		margin: 0;
-	}
-	.tech-stacks .abstraction {
-		display: flex;
-		flex-direction: row;
-		padding: 0;
-		margin: 0;
-	}
-	#projects {
-		padding-bottom: 13vw;
-		justify-content: space-between;
-	}
-	.projects-container {
-		width: 1200px;
-		margin: 0 auto;
-		height: auto;
-	}
-	#project3 .main-content img,
-	#project4 .main-content img,
-	.main-content img {
-		height: 229px;
-		width: 452px;
-	}
-	.projects-container p {
-		font-size: 16px;
-		margin-bottom: 10px;
-	}
-	#project2 .main-description,
-	#project4 .main-description,
-	.project .main-description {
-		width: 400px;
-		height: 30dvh;
-		margin: 0 auto;
-		justify-content: center;
-		align-items: flex-start;
-		text-align: justify;
-	}
-	.main-description .main-summary {
-		height: auto;
-		margin: 0 auto;
-	}
-	#project3 .main-content .github,
-	#project4 .main-content .github {
+	.mobile-nav a:nth-child(2) img {
 		width: 25px;
 		height: 25px;
 	}
-	#roles {
-		width: 92.5%;
-		margin-top: 80px;
-		margin-bottom: 150px;
+	.mobile-nav a img {
+		width: 30px;
+		height: 30px;
 	}
-	#about {
-		height: 150dvh;
-		padding-bottom: 20vw;
+	nav .social {
+		width: 140px;
+		justify-content: space-between;
+		padding: 8px 0px;
+		z-index: 40;
 	}
-	#about h1 {
-		padding-bottom: 12vw;
-		padding-top: 2vw;
-		background-image: url("../svgs/blob-about-landscape.svg");
-		margin-top: -10px;
-	}
-	#about .about-me {
-		padding: 20px 0;
-		margin-top: 20vw;
-		height: 95dvh;
-		min-width: 70%;
-		max-width: 1300px;
-	}
-	#about .about-me img {
-		width: 420px;
-		height: 420px;
-		top: 10px;
-		left: 3vw;
-		box-shadow: -15px -15px #006eff;
-		-webkit-clip-path: polygon(
-			25% 0%,
-			75% 0%,
-			100% 50%,
-			75% 100%,
-			25% 100%,
-			0% 50%
-		);
-		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-	}
-	#about .about-me p {
-		width: 550px;
-		height: auto;
-		right: 6vw;
-		font-size: 16px;
-		box-shadow: 25px 15px #006eff;
+	.social a:nth-child(2) {
 		margin: 0;
 	}
-	#about a {
-		font-size: 16px;
-		box-shadow: 10px 10px #006eff;
-		margin-top: 10vw;
+	.social a img {
+		width: 20px;
 	}
+	nav #logo {
+		padding: 0px 10px;
+		margin-left: -65px;
+		width: 35px;
+		height: 35px;
+	}
+	#introduction {
+		width: 100%;
+		margin: 0px auto;
+		height: 450px;
+		flex-direction: row;
+		background-image: url("../svgs/introduction/introduction1399.svg");
+		background-position: top;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 20px 0;
+	}
+	#introduction .intro-images {
+		width: 400px;
+		margin: 0;
+		padding: 20px 50px;
+		padding-bottom: 0;
+	}
+	#introduction .intro-images img {
+		width: 300px;
+		height: auto;
+		background-size: contain;
+		padding-bottom: 10px;
+	}
+	#introduction .intro-text {
+		width: 650px;
+		justify-content: center;
+		align-items: flex-start;
+		text-align: center;
+		height: 450px;
+		margin-bottom: -30px;
+	}
+	#introduction .intro-text header {
+		align-items: center;
+	}
+	#introduction .intro-text header h2 {
+		font-size: 2.5rem;
+		margin-right: 5px;
+	}
+	#introduction .intro-text header h1 {
+		font-size: 2.5rem;
+	}
+	#introduction .intro-text b {
+		font-size: 2rem;
+		line-height: 40px;
+		text-align: left;
+	}
+	#introduction .intro-text p {
+		font-size: 1rem;
+		margin-top: 15px;
+	}
+	#introduction .intro-text .connect {
+		justify-content: flex-start;
+		margin-top: 35px;
+	}
+	#introduction .intro-text .connect a {
+		padding: 7px 15px;
+		font-size: 1rem;
+	}
+	#portfolio {
+		padding-top: 25px;
+		margin-top: 30px;
+		border-top: 2px solid #3c006d;
+		border-bottom: 2px solid #410075;
+		margin-bottom: 60px;
+		border-radius: 40px;
+		box-shadow: none;
+		padding-bottom: 0px;
+		background-image: url("../svgs/portfolio/portfolio1399.svg");
+		margin-bottom: 10px;
+	}
+	#portfolio h1 {
+		font-size: 1.85rem;
+	}
+	#portfolio .stack-header {
+		margin: 50px auto 30px auto;
+		justify-content: center;
+		align-items: center;
+	}
+	#portfolio .stack-header p {
+		font-size: 1.3rem;
+	}
+	#portfolio .stack-header img {
+		width: 25px;
+		height: 25px;
+		margin-left: 15px;
+		margin-bottom: 0;
+	}
+	#portfolio .stack-heading {
+		font-size: 1.5rem;
+	}
+	#portfolio .role {
+		width: 93.5%;
+	}
+	#portfolio .role b {
+		font-size: 0.95rem;
+	}
+	#portfolio .role p {
+		font-size: 0.85rem;
+	}
+	#portfolio .main,
+	#portfolio .abstraction,
+	#portfolio .vanilla,
+	#portfolio .tools,
+	#portfolio .platform,
+	#portfolio .backends {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
+	#portfolio .tech-stacks,
+	#portfolio .backends,
+	#portfolio .platforms {
+		width: 100%;
+		margin: 0 auto;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	#portfolio .tech-stacks {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		gap: 0;
+		justify-content: center;
+	}
+	#portfolio .tech-stacks ul {
+		width: -webkit-min-content;
+		width: -moz-min-content;
+		width: min-content;
+	}
+	#portfolio .tech-stacks li {
+		padding: 8px 6px;
+		border-radius: 20px;
+		margin: 0 2.5vw;
+	}
+	#portfolio .platforms li,
+	#portfolio .backends li {
+		width: 50px;
+		padding: 8px;
+		border-radius: 20px;
+		margin: 0 2.5vw;
+	}
+	#portfolio .tech-stacks li p {
+		font-size: 0.75rem;
+		padding: 0;
+	}
+	#portfolio .backends li p,
+	#portfolio .platforms li p {
+		font-size: 0.75rem;
+		padding: 0;
+	}
+	#portfolio .backends li {
+		padding: 8px 10px;
+	}
+	#portfolio .tech-stacks li img {
+		width: 35px;
+		height: 35px;
+	}
+	.platforms ul {
+		padding: 0;
+		margin: 0;
+	}
+	#roles {
+		width: 95%;
+		height: auto;
+		margin-top: -10px;
+	}
+	#roles .role {
+		height: -webkit-max-content;
+		height: -moz-max-content;
+		height: max-content;
+	}
+	#roles b {
+		font-size: 1rem;
+	}
+	#roles p {
+		font-size: 0.75rem;
+		font-family: monospace;
+	}
+	.abstraction,
+	.main,
+	.vanilla {
+		padding-left: 0;
+	}
+	#projects {
+		padding-top: 20px;
+		padding-bottom: 50px;
+		height: auto;
+		border-top: 2px solid #3c006d;
+		border-bottom: 2px solid #3c006d;
+		margin-bottom: 10px;
+		border-radius: 40px;
+		background-image: url("../svgs/projects/projects1399.svg");
+	}
+	#projects h1 {
+		padding-bottom: 50px;
+	}
+	.projects-container {
+		height: auto;
+	}
+	.projects-container .project {
+		margin-bottom: 10px;
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: auto;
+		padding-top: 10px;
+		justify-content: center;
+	}
+	.projects-container .project .main-summary {
+		height: auto;
+	}
+	.project #project1,
+	.project #project3 {
+		flex-direction: column;
+		height: auto;
+	}
+	.project #project2,
+	.project #project4 {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	.project .main-title {
+		font-size: 1.25rem;
+	}
+	.project .main-content {
+		width: 50%;
+	}
+	#project3 .main-content img,
+	#project4 .main-content img,
+	.project .main-content img {
+		max-height: 229px;
+		max-width: 452px;
+		width: 100%;
+		height: 100%;
+	}
+	#project3 .main-content .github,
+	#project4 .main-content .github {
+		width: 20px;
+		height: 20px;
+	}
+	.project .main-description {
+		width: 40%;
+		justify-content: center;
+		align-items: flex-start;
+		text-align: justify;
+		padding: 0;
+		margin-top: -100px;
+	}
+	.main-description .main-title {
+		font-size: 1.5rem;
+	}
+	.main-description .main-summary {
+		font-size: 0.85rem;
+	}
+	.projects-container p {
+		font-size: 0.75rem;
+		margin-bottom: 5px;
+	}
+	#about,
 	#contact {
-		height: 1500px;
 		margin-top: 0;
 		padding: 0;
+		background-position: right;
+		background-size: cover;
+	}
+	#contact {
+		background-size: cover;
+		background-position: bottom;
+		padding: 250px 0 250px 0;
+		height: 800px;
+	}
+	#about {
+		padding: 0;
+		height: 800px;
+		display: flex;
 		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-top: 2px solid #3c006d;
+		border-bottom: 2px solid #410075;
+		margin-bottom: 10px;
+		border-radius: 40px;
+		background-image: url("../svgs/about/about1399.svg");
+		background-position: top;
+		background-size: cover;
+	}
+	#about h1 {
+		border-top: 2px solid #3c006d;
+		border-radius: 40px;
+		border-radius: 0px;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+		padding: 15px 0 0 0;
+	}
+	#about .about-me {
+		width: 90%;
+		height: 500px;
+		padding: 0;
+		flex-direction: row;
+		justify-content: space-around;
+		max-width: 1000px;
+	}
+	#about .about-me img {
+		width: 300px;
+		height: 300px;
+		background-color: #006eff;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	#about .img-back {
+		-webkit-filter: drop-shadow(20px 20px 0px #006eff);
+		filter: drop-shadow(20px 20px 0px #006eff);
+		height: auto;
+		margin: 50px;
+		margin-left: 50px;
+	}
+	#about .about-me p {
+		width: 480px;
+		height: auto;
+		font-size: 0.95rem;
+		margin-bottom: 0px;
+		word-spacing: normal;
+		padding: 12px 14px;
+		text-align: left;
+	}
+	#about a {
+		font-size: 1rem;
+		padding: 12px 20px;
+		margin-right: -20px;
+		margin-top: 50px;
+	}
+	#contact {
 		background-image: url("../images/contact-background/gabe-09IS_HJcUZA-unsplash_landscape1200.webp");
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+		height: 500px;
 	}
 	#contact h1 {
-		background-image: url("../svgs/wave-contact-landscape.svg");
-		padding-bottom: 20vw;
-		padding-top: 0;
-		font-size: 35px;
+		background-image: url("../svgs/contact/h1/h11399.svg");
+		font-size: 1.85rem;
 		margin-top: 0;
+		padding-bottom: 100px;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+		padding-top: 50px;
+		background-size: cover;
 	}
 	#contact .top {
-		height: 50px;
-		background-image: url("../svgs/waves-contact-top-landscape.svg");
+		background-image: url("../svgs/contact/top/top1399.svg");
 		position: absolute;
-		top: -15vw;
+		top: -60px;
 		left: 0;
-		height: 20vw;
+		height: 25vw;
+		display: none;
 	}
 	.contact-container {
-		width: 600px;
+		width: 550px;
 		padding-bottom: 30px;
 		border-radius: 10px;
 	}
 	.contact-container form {
-		height: 630px;
-		width: 85%;
+		height: auto;
 	}
 	.contact-container form h2 {
-		font-size: 25px;
-		margin: 30px 0 60px;
+		font-size: 1.5rem;
+		margin: 0px 30px 30px;
 		font-weight: 900;
 	}
 	.contact-container form label {
-		font-size: 16px;
+		font-size: 0.85rem;
 		margin-top: 2px;
 	}
 	.contact-container form input {
-		margin-bottom: 10px;
-		font-size: 16px;
+		margin-bottom: 5px;
+		font-size: 0.95rem;
+		font-weight: 600;
+	}
+	.contact-container form textarea {
+		min-height: 150px;
+		font-size: 0.95rem;
 	}
 	.contact-container form button {
-		padding: 16px 0;
-		font-size: 15px;
-	}
-	#contact .bottom-wave {
-		padding: 20vw 0;
-		background-image: url("../svgs/waves-contact-bottom-landscape.svg");
+		padding: 12px 0;
+		font-size: 0.75rem;
 	}
 	footer {
-		height: 15dvh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	footer a #logo {
-		margin: 0;
+		height: 10dvh;
 	}
 	footer .bottom-links {
 		width: 80%;
 		margin: 0 auto;
 		justify-content: space-evenly;
+		padding-bottom: 25px;
 	}
 	footer .bottom-links li a {
-		font-size: 13px;
+		font-size: 0.65rem;
+	}
+	::-webkit-scrollbar {
+		width: 0;
 	}
 }
 @-webkit-keyframes blob {
