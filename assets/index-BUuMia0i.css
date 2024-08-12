@@ -2582,13 +2582,13 @@ footer .bottom-links li a:hover {
 	#portfolio .tech-stacks,
 	#portfolio .backends,
 	#portfolio .platforms {
-		width: 100%;
+		width: 1200px;
 		margin: 0 auto;
 		justify-content: center;
 		margin-bottom: 30px;
 	}
 	#portfolio .tech-stacks {
-		width: 100%;
+		width: 1200px;
 		display: flex;
 		flex-direction: row;
 		margin: 0 auto;
@@ -3034,13 +3034,13 @@ footer .bottom-links li a:hover {
 	#portfolio .tech-stacks,
 	#portfolio .backends,
 	#portfolio .platforms {
-		width: 100%;
+		width: 1200px;
 		margin: 0 auto;
 		justify-content: center;
 		margin-bottom: 30px;
 	}
 	#portfolio .tech-stacks {
-		width: 100%;
+		width: 1200px;
 		display: flex;
 		flex-direction: row;
 		margin: 0 auto;
