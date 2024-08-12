@@ -8,31 +8,37 @@
     <meta content="index, nofollow" name="robots" />
     <meta content="Portfolio of Tejas DL" name="description" />
     <title>Hey There 👋</title>
-    <link href="./svgs/wave-home-portfolio.svg" rel="preload" as="image" />
-    <link href="./svgs/blob-home.svg" rel="preload" as="image" />
-    <script type="module" crossorigin="" src="/assets/index-BUm5YWHS.js"></script>
-    <link rel="preload" href="/assets/index-BUuMia0i.css" crossorigin="" as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link rel="stylesheet" href="/assets/index-BUuMia0i.css">
     </noscript>
+    <!-- <link rel="preload" href="/svgs/wave-home-portfolio.svg" as="image" />
+    <link rel="preload" href="/svgs/blob-home.svg" as="image" /> -->
+    <link rel="preload" href="/assets/index-BUuMia0i.css" crossorigin="" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" crossorigin="" href="/assets/index-BUuMia0i.css" />
-    <link rel="modulepreload" href="/assets/index-BUm5YWHS.js" />
+    <link rel="preload" crossorigin="" href="/assets/index-BUm5YWHS.js" as="script" />
+    <script type="module" crossorigin="" src="/assets/index-BUm5YWHS.js" defer></script>
   </head>
 
   <body class="animateFadeIn">
     <div id="app">
+      <div id="mobile-container">
+        <div class="mobile-nav">
+          <a href="#portfolio"><img alt="portfolio" src="./svgs/work-svgrepo-com.svg"
+              style="width: 30px" />Experience</a>
+          <a href="#projects"><img alt="projects" src="./svgs/project-svgrepo-com.svg"
+              style="width: 25px; padding: 2px;" />Projects</a>
+          <a href="#about"><img alt="about-me" src="./svgs/user-03-svgrepo-com.svg" style="width: 30px;" />About</a>
+          <a href="#contact"><img alt="about-me" src="./svgs/message-square-chat-svgrepo-com.svg"
+              style="width: 30px;" />Connect</a>
+        </div>
+      </div>
       <nav>
         <ul class="links">
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#projects">Works</a></li>
         </ul>
-        <div class="mobile-nav">
-          <a href="#portfolio"><img alt="portfolio" src="./images/icons8-briefcase-48.png" style="width: 26px" /> </a><a
-            href="#projects"><img alt="projects" src="./images/icons8-project-48.png" style="width: 26px" /> </a><a
-            href="#about"><img alt="about-me" src="./images/icons8-user-32.png" style="width: 30px" /></a>
-        </div>
         <a href=""><img alt="logo_tej" src="./images/Logo_tej.webp" id="logo" /></a>
         <div class="social">
           <a href="https://twitter.com/yousurebro_tej"><img alt="twitter" src="./svgs/social/icons8-twitter.svg" />
@@ -94,7 +100,7 @@
                     font-weight: 600;
                   ">Nov 2023 - present</small>
               </div>
-              <ul style="padding: 0 16px">
+              <ul style="padding: 0 16px" id="res">
                 <li>
                   <p>
                     Led the frontend development of an internal project,
@@ -363,7 +369,7 @@
             <img alt="tejasdl" src="/assets/portfolio_image-C5cRms3L.webp" loading="lazy" id="about-img"
               class="animateFromRight" />
           </div>
-          <p class="animateFromLeft story">
+          <p class="animateFromLeft">
             Back in 2020, a month before the pandemic set in, in college I
             overheard my friend mentioning the term <b>CSS</b> and that started
             my journey into Web development, me being the guy who undoubtedly
@@ -414,7 +420,7 @@
         </div>
         <p class="bottom-wave"></p>
       </section>
-      <footer>
+      <!-- <footer>
         <a href=""><img alt="logo_tej" src="./images/Logo_tej.webp" class="logo" /></a>
         <ul class="bottom-links">
           <li><a href="#portfolio">Portfolio</a></li>
@@ -422,7 +428,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact me</a></li>
         </ul>
-      </footer>
+      </footer> -->
     </div>
   </body>
 
