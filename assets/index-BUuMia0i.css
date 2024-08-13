@@ -16,7 +16,10 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 	scroll-behavior: smooth;
 	font-size: 100%;
 }
@@ -372,7 +375,9 @@ h2 {
 	box-shadow: 0 -5px 20px #5f00a8;
 }
 #projects {
-	min-height: auto;
+	min-height: -webkit-fit-content;
+	min-height: -moz-fit-content;
+	min-height: fit-content;
 	max-height: -webkit-max-content;
 	max-height: -moz-max-content;
 	max-height: max-content;
@@ -3397,24 +3402,6 @@ footer .bottom-links li a:hover {
 	}
 	to {
 		border-radius: 23% 57% 64% 26%/55% 48% 52% 45%;
-	}
-}
-@-webkit-keyframes loading {
-	0% {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-		display: none;
-	}
-}
-@keyframes loading {
-	0% {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-		display: none;
 	}
 }
 @-webkit-keyframes fadeIn {

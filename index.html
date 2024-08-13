@@ -13,6 +13,11 @@
     </noscript>
     <link rel="preload" href="/assets/index-BUuMia0i.css" crossorigin="" as="style"
       onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/svgs/introduction/introduction499.svg" as="image" />
+    <link rel="preload" href="/svgs/introduction/introduction639.svg" as="image" />
+    <link rel="preload" href="/svgs/introduction/introduction899.svg" as="image" />
+    <link rel="preload" href="/svgs/introduction/introduction1199.svg" as="image" />
+    <link rel="preload" href="/svgs/introduction/introduction1399.svg" as="image" />
     <link rel="stylesheet" crossorigin="" href="/assets/index-BUuMia0i.css" />
     <link rel="preload" crossorigin="" href="/assets/index-BUm5YWHS.js" as="script" />
     <script type="module" crossorigin="" src="/assets/index-BUm5YWHS.js" defer></script>
@@ -22,12 +27,13 @@
     <div id="app">
       <div id="mobile-container">
         <div class="mobile-nav">
-          <a href="#portfolio"><img alt="portfolio" src="./svgs/work-svgrepo-com.svg"
+          <a href="#portfolio"><img alt="portfolio" src="./svgs/work-svgrepo-com.svg" width="30" height="30"
               style="width: 30px" />Experience</a>
-          <a href="#projects"><img alt="projects" src="./svgs/project-svgrepo-com.svg"
+          <a href="#projects"><img alt="projects" src="./svgs/project-svgrepo-com.svg" width="29" height="29"
               style="width: 25px; padding: 2px;" />Projects</a>
-          <a href="#about"><img alt="about-me" src="./svgs/user-03-svgrepo-com.svg" style="width: 30px;" />About</a>
-          <a href="#contact"><img alt="about-me" src="./svgs/message-square-chat-svgrepo-com.svg"
+          <a href="#about"><img alt="about-me" src="./svgs/user-03-svgrepo-com.svg" style="width: 30px;" width="30"
+              height="30" />About</a>
+          <a href="#contact"><img alt="about-me" src="./svgs/message-square-chat-svgrepo-com.svg" width="30" height="30"
               style="width: 30px;" />Connect</a>
         </div>
       </div>
@@ -37,12 +43,14 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#projects">Works</a></li>
         </ul>
-        <a href=""><img alt="logo_tej" src="./images/Logo_tej.webp" id="logo" /></a>
+        <a href=""><img alt="logo_tej" src="./images/Logo_tej.webp" id="logo" width="50" height="30" /></a>
         <div class="social">
-          <a href="https://twitter.com/yousurebro_tej"><img alt="twitter" src="./svgs/social/icons8-twitter.svg" />
+          <a href="https://twitter.com/yousurebro_tej"><img alt="twitter" src="./svgs/social/icons8-twitter.svg"
+              width="25" height="25" />
           </a><a href="https://www.linkedin.com/in/tejas-dl-94b771185"><img alt="linkedin"
-              src="./svgs/social/icons8-linkedin.svg" /> </a><a href="https://github.com/tejas-git64"><img alt="github"
-              loading="lazy" src="./svgs/social/icons8-github.svg" /></a>
+              src="./svgs/social/icons8-linkedin.svg" width="26" height="26" /> </a><a
+            href="https://github.com/tejas-git64"><img alt="github" loading="lazy" src="./svgs/social/icons8-github.svg"
+              width="35" height="35" /></a>
         </div>
       </nav>
       <section id="introduction">
@@ -54,12 +62,13 @@
           <b>An experienced frontend developer based in India</b>
           <p>I design beautiful and functional web experiences</p>
           <div class="connect">
-            <a href="#contact">Let's talk <img src="/svgs/arrow-up-right-svgrepo-com.svg" alt="visit-icon"></a> <a
-              href="#about">Hire me <img src="/svgs/arrow-up-right-svgrepo-com.svg" alt="visit-icon"></a>
+            <a href="#contact">Let's talk <img src="/svgs/arrow-up-right-svgrepo-com.svg" alt="visit-icon" width="20"
+                height="20"></a> <a href="#about">Hire me <img src="/svgs/arrow-up-right-svgrepo-com.svg"
+                alt="visit-icon" width="20" height="20"></a>
           </div>
         </div>
         <div class="intro-images">
-          <img alt="intro-image" src="./images/introImage4.webp" />
+          <img alt="intro-image" src="./images/introImage4.webp" width="250" height="350" />
         </div>
       </section>
       <section id="portfolio">
@@ -393,19 +402,19 @@
         <h1 data-animation="animateFadeIn">
           Want to build the next big thing?
         </h1>
-        <img src="/svgs/coding-5-33.svg" alt="mail-art" id="mail-art" width="500" height="500">
+        <img src="/svgs/contact-illustration.svg" loading="lazy" alt="mail-art" id="mail-art" width="500" height="500">
         <div class="animateFadeBottom contact-container">
           <form action="https://formsubmit.co/b0699b68232a81637d5197ce1cdbefcc" id="contact-form" method="POST"
             target="_blank">
             <h2>Let's connect</h2>
             <label for="fname">Full name</label>
-            <input name="Name" id="fname" required="" />
+            <input name="Name" id="fname" required="" autocomplete="name" />
             <label for="org">Organization</label>
-            <input name="Organization" id="org" required="" />
+            <input name="Organization" id="org" required="" autocomplete="organization-title" />
             <label for="email">Email address</label>
-            <input name="Email address" type="email" id="email" required="" />
+            <input name="Email address" type="email" id="email" required="" autocomplete="email" />
             <label for="comments">Message</label>
-            <textarea id="comments" name="Message" required=""></textarea>
+            <textarea id="comments" name="Message" required="" autocomplete="on"></textarea>
             <input name="_subject" type="hidden" value="Invitation to connect 📩" />
             <input name="_blacklist" type="hidden" value="spammy pattern, banned term, phrase" />
             <input type="hidden" name="_autoresponse"
