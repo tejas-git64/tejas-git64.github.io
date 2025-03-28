@@ -233,14 +233,18 @@ nav #logo {
 }
 #introduction .intro-background {
 	width: 100%;
-	height: auto;
+	height: 100dvh;
+	max-height: max-content;
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
-	object-fit: cover;
 	z-index: -10;
-	overflow: hidden;
-	object-position: bottom;
+}
+
+#introduction .intro-background img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .intro-text {
 	width: 100%;
@@ -275,6 +279,7 @@ h2 {
 	-webkit-animation: fadeInLeft 0.5s ease;
 	animation: fadeInLeft 0.5s ease;
 	font-weight: 600;
+	flex-wrap: wrap;
 }
 .intro-text p {
 	color: #c689ff;
@@ -1199,7 +1204,7 @@ h2 {
 		justify-content: space-between;
 		align-items: center;
 		width: 90%;
-		padding: 5px 0;
+		padding: 10px 0 0;
 	}
 	nav .links {
 		display: none;
@@ -1221,43 +1226,47 @@ h2 {
 	#logo {
 		padding: 0 10px;
 	}
+	#mobile-container .mobile-nav {
+		width: 85%;
+	}
 	#introduction {
 		width: 100%;
+		height: 85dvh;
+		max-height: 700px;
 		margin: 0 auto;
 		flex-direction: column-reverse;
-		border-radius: 0;
+		border-radius: 20px;
 	}
 	#introduction .intro-images {
-		width: 350px;
-		height: 350px;
+		width: 380px;
+		height: 390px;
 		margin-top: 20px;
 	}
 	#introduction .intro-images img {
-		width: 70%;
+		width: 65%;
 		padding: 50px 0 0;
 	}
 	#introduction .intro-text {
 		width: 80%;
-		justify-content: flex-end;
 		align-items: center;
-		margin: 65px auto;
 		text-align: center;
 	}
 	#introduction .intro-text header {
 		align-items: center;
+		height: 30px;
 	}
-	#introduction .intro-text header h2 {
-		font-size: 1.75rem;
-		margin-right: 5px;
+	#introduction .intro-text header h4 {
+		font-size: 1.25rem;
+		margin: 0 10px -5.5px 0;
 	}
 	#introduction .intro-text header h1 {
 		font-size: 1.75rem;
 	}
 	#introduction .intro-text b {
-		font-size: 1.25rem;
+		font-size: 1.75rem;
 		text-align: center;
-		line-height: 1.5rem;
-		padding: 0 10px;
+		line-height: 2.4rem;
+		padding: 10px 0;
 	}
 	#introduction .intro-text p {
 		font-size: 1rem;
@@ -1267,8 +1276,8 @@ h2 {
 		display: none;
 	}
 	#portfolio {
-		padding-top: 25px;
-		/* background-image: url(/svgs/portfolio/portfolio639.svg); */
+		padding-top: 55px;
+		background-image: url(/svgs/portfolio/portfolio639.svg);
 	}
 	#portfolio h1 {
 		font-size: 1.75rem;
