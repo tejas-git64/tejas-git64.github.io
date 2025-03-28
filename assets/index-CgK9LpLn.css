@@ -128,9 +128,7 @@ nav {
 	background-color: #0b0015;
 	z-index: 30;
 }
-nav .links {
-	margin-top: 10px;
-}
+
 #mobile-container {
 	width: 100%;
 	position: fixed;
@@ -153,17 +151,7 @@ nav .links {
 	border-radius: 15px;
 	border: 2px solid #22003f;
 }
-nav .links {
-	height: fit-content;
-	list-style: none;
-	display: flex;
-	transition: all 0.5 ease;
-	-webkit-animation: fadeInLeft 0.5s ease;
-	animation: fadeInLeft 1s ease;
-	align-items: center;
-	justify-content: center;
-}
-nav .links a,
+
 .mobile-nav a {
 	-webkit-text-decoration: none;
 	text-decoration: none;
@@ -183,11 +171,7 @@ nav .links a,
 	width: 20px;
 	margin-bottom: -6px;
 }
-nav .links a:hover {
-	color: #d374ff;
-	border-bottom: 2px solid #5f00a8;
-	padding-bottom: 5px;
-}
+
 nav a {
 	width: 30px;
 	height: 30px;
@@ -221,7 +205,7 @@ nav #logo {
 .social a:nth-child(3) img {
 	width: 35px;
 	height: 35px;
-	margin-top: -1.5px;
+	margin-top: -5px;
 }
 #introduction {
 	width: 90%;
@@ -908,9 +892,6 @@ h2 {
 		width: 90%;
 		padding: 10px 0px;
 	}
-	nav .links {
-		display: none;
-	}
 	.mobile-nav {
 		width: 85%;
 	}
@@ -1210,9 +1191,6 @@ h2 {
 		align-items: center;
 		width: 90%;
 		padding: 10px 0 0;
-	}
-	nav .links {
-		display: none;
 	}
 	nav .mobile-nav {
 		width: 85%;
@@ -1538,7 +1516,7 @@ h2 {
 		height: 50px;
 		margin: 0 auto;
 		justify-content: space-between;
-		padding: 0 15px;
+		padding: 3px 15px;
 	}
 	nav a {
 		width: 30px;
@@ -1580,7 +1558,7 @@ h2 {
 		height: 25px;
 	}
 	nav .social {
-		width: 120px;
+		width: 130px;
 		justify-content: space-between;
 		padding: 8px 0;
 		z-index: 40;
@@ -1593,7 +1571,7 @@ h2 {
 	}
 	#introduction {
 		width: 93.5%;
-		margin: 0 auto 40px;
+		margin: 0 auto 50px;
 		height: 50vw;
 		flex-direction: row;
 		padding-right: 20px;
@@ -1916,14 +1894,8 @@ h2 {
 	nav {
 		justify-content: space-between;
 		align-items: center;
-		width: 92.5%;
-		padding: 0;
-	}
-	nav .links {
-		display: flex;
-		justify-content: space-around;
-		padding: 0;
-		width: 250px;
+		width: 95%;
+		padding: 5px 20px;
 	}
 	#mobile-container {
 		width: 60px;
@@ -1971,26 +1943,23 @@ h2 {
 	.social a img {
 		width: 20px;
 	}
-	#logo {
-		padding: 0 10px;
-		margin-left: -85px;
-	}
 	#introduction {
-		width: 87.5%;
-		margin: 0 auto 80px;
-		height: 45vw;
+		width: 85.5%;
+		margin: 0 auto 50px;
+		height: 53vw;
 		flex-direction: row;
-		padding: 0 2.5vw;
+		padding: 0;
 		align-items: center;
 		justify-content: space-between;
+		padding: 0 60px;
 	}
 	#introduction .intro-images {
-		width: 35vw;
+		width: 40vw;
 		margin: 0;
-		padding: 10px 0;
+		padding: 25px 0;
 	}
 	#introduction .intro-images img {
-		width: 25vw;
+		width: 23.5vw;
 		height: auto;
 		background-size: contain;
 		padding-bottom: 10px;
@@ -2000,23 +1969,24 @@ h2 {
 		justify-content: center;
 		align-items: flex-start;
 		text-align: center;
-		height: 25vw;
-		padding-left: 35px;
+		height: 30vw;
+		margin-top: 50px;
 	}
 	#introduction .intro-text header {
 		align-items: center;
 	}
-	#introduction .intro-text header h2 {
-		font-size: 3.5vw;
-		margin-right: 5px;
+	#introduction .intro-text header h4 {
+		font-size: 1.5vw;
+		margin: 0 10px -20px 0;
 	}
 	#introduction .intro-text header h1 {
 		font-size: 3.7vw;
 	}
 	#introduction .intro-text b {
-		font-size: 3.2vw;
-		line-height: 3.5vw;
+		font-size: 3.7vw;
+		line-height: 4vw;
 		text-align: left;
+		margin-top: 5px;
 	}
 	#introduction .intro-text p {
 		font-size: 1.5vw;
@@ -2024,12 +1994,11 @@ h2 {
 	}
 	#introduction .intro-text .connect {
 		justify-content: flex-start;
-		margin-top: 15px;
-		margin-bottom: 10px;
+		margin-top: 20px;
 	}
 	#introduction .intro-text .connect a {
-		padding: 7.5px 20px;
-		font-size: 1rem;
+		padding: 7.5px 10px;
+		font-size: 0.85rem;
 	}
 	#portfolio {
 		padding-top: 25px;
@@ -2339,14 +2308,8 @@ h2 {
 	nav {
 		justify-content: space-between;
 		align-items: center;
-		width: 92.5%;
-		padding: 0;
-	}
-	nav .links {
-		display: flex;
-		justify-content: space-around;
-		padding: 0;
-		width: 250px;
+		width: 95%;
+		padding-top: 5px;
 	}
 	#mobile-container {
 		width: 60px;
@@ -2392,25 +2355,21 @@ h2 {
 		margin: 0;
 	}
 	.social a img {
-		width: 20px;
-	}
-	#logo {
-		padding: 0 10px;
-		margin-left: -85px;
+		width: 30px;
 	}
 	#introduction {
 		width: 87.5%;
 		margin: 0 auto 80px;
-		height: 45vw;
+		height: 650px;
 		flex-direction: row;
-		padding: 0 2.5vw;
+		padding: 0 5vw 0 3vw;
 		align-items: center;
 		justify-content: space-between;
 	}
 	#introduction .intro-images {
-		width: 35vw;
+		width: 30vw;
 		margin: 0;
-		padding: 10px 0;
+		padding: 10px 20px;
 	}
 	#introduction .intro-images img {
 		width: 23.5vw;
@@ -2424,22 +2383,24 @@ h2 {
 		align-items: flex-start;
 		text-align: center;
 		height: 25vw;
+		margin-top: 40px;
 		padding-left: 35px;
 	}
 	#introduction .intro-text header {
 		align-items: center;
 	}
-	#introduction .intro-text header h2 {
-		font-size: 3.5vw;
-		margin-right: 5px;
+	#introduction .intro-text header h4 {
+		font-size: 1.5vw;
+		margin: 0 15px -20px 0;
 	}
 	#introduction .intro-text header h1 {
-		font-size: 3.7vw;
+		font-size: 3.5vw;
 	}
 	#introduction .intro-text b {
-		font-size: 3.2vw;
-		line-height: 3.5vw;
+		font-size: 3.5vw;
+		line-height: 3.8vw;
 		text-align: left;
+		margin: 10px 0;
 	}
 	#introduction .intro-text p {
 		font-size: 1.5vw;
@@ -2447,12 +2408,11 @@ h2 {
 	}
 	#introduction .intro-text .connect {
 		justify-content: flex-start;
-		margin-top: 15px;
-		margin-bottom: 10px;
+		margin-top: 20px;
 	}
 	#introduction .intro-text .connect a {
-		padding: 7.5px 20px;
-		font-size: 1rem;
+		padding: 8px 12px;
+		font-size: 0.85rem;
 	}
 	#portfolio {
 		padding-top: 25px;
@@ -2769,12 +2729,6 @@ h2 {
 		align-items: center;
 		width: 97.5%;
 		padding: 0;
-	}
-	nav .links {
-		display: flex;
-		justify-content: space-between;
-		padding: 0;
-		width: 235px;
 	}
 	#mobile-container {
 		width: 60px;
