@@ -655,8 +655,8 @@ h2 {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 10px 5px;
-	margin-bottom: 10px;
+	padding: 40px 5px 10px 5px;
+	margin: 10px 0 -20px 0;
 }
 .stack-header.animated {
 	-webkit-animation: fadeInLeft 1s ease-in;
@@ -668,11 +668,10 @@ h2 {
 	margin-left: 10px;
 }
 #portfolio .stack-heading {
-	/* font-size: 2rem; */
 	color: #fff;
 	font-weight: 900;
 	white-space: nowrap;
-	transform: translate(10px);
+	transform: translate(5px);
 	visibility: visible;
 }
 .tech-stacks {
@@ -687,7 +686,7 @@ h2 {
 }
 .tech-stacks li {
 	background-color: #160029;
-	padding: 5px 12px;
+	padding: 5px 15px;
 	margin: 20px;
 	border-radius: 20px;
 	box-shadow: inset 0 0 10px #220034;
@@ -702,7 +701,7 @@ h2 {
 .tech-stacks li img {
 	width: 50px;
 	height: 50px;
-	padding: 0 10px;
+	padding: 0 5px;
 }
 .tech-stacks li p {
 	color: #faefff;
@@ -762,9 +761,10 @@ h2 {
 	animation: fadeIn 0.5s ease;
 }
 #roles {
-	width: 85%;
-	margin: 0 auto 40px;
+	width: 100%;
+	margin: 40 auto;
 	padding: 0;
+	padding-top: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -773,22 +773,37 @@ h2 {
 #roles .role {
 	list-style: none;
 	text-align: left;
-	padding: 20px 15px;
+	padding: 10px 8px;
 	border-radius: 15px;
 	background-color: #2900429c;
 	color: #fff;
-	width: 90%;
+	width: 97.5%;
 	margin: 0 auto;
+	margin-left: 6px;
+}
+#roles .company {
+	font-weight: 600;
+	padding: 0;
+	font-family: Plus Jakarta Sans;
+	font-size: 13px;
+	margin-bottom: 5px;
 }
 .role b {
+	width: 40%;
 	color: #2cffed;
-	padding: 0 0 10px;
 	font-size: 0.75rem;
+	font-family: monospace;
 }
 .role p {
 	color: #fff;
 	font-weight: 300;
 	font-size: 0.75rem;
+}
+.role small {
+	color: #cc74ff;
+	font-size: 0.75rem;
+	font-weight: 600;
+	font-family: monospace;
 }
 .projects-container {
 	width: 90%;
@@ -1000,15 +1015,14 @@ h2 {
 	#portfolio .stack-header img {
 		width: 20px;
 		height: 20px;
-		margin-left: 20px;
-		margin-top: -3px;
+		margin-left: 13px;
 	}
 	#portfolio .tech-stacks {
 		width: 90%;
 		margin: 0 auto;
 	}
 	#portfolio .tech-stacks li {
-		padding: 10px 5px;
+		padding: 10px;
 	}
 	#portfolio .platforms li,
 	#portfolio .backends li {
@@ -1031,7 +1045,7 @@ h2 {
 	#roles {
 		width: 95%;
 		height: auto;
-		margin-top: -10px;
+		margin-top: 0px;
 	}
 	#roles .role {
 		height: -webkit-max-content;
@@ -1043,6 +1057,9 @@ h2 {
 	}
 	.role #res {
 		font-family: monospace;
+	}
+	.role #res li p {
+		font-size: 0.75rem;
 	}
 	.abstraction,
 	.main,
@@ -1286,13 +1303,17 @@ h2 {
 		font-size: 1.2rem;
 	}
 	#portfolio .stack-header img {
-		width: 25px;
-		height: 25px;
+		width: 22px;
+		height: 22px;
 		margin-left: 15px;
 		margin-bottom: 0;
 	}
+	#portfolio #roles {
+		width: 100%;
+	}
 	#portfolio .role {
-		width: 85%;
+		margin: 0 auto;
+		width: 95%;
 	}
 	#portfolio .main,
 	#portfolio .abstraction,
@@ -1712,14 +1733,16 @@ h2 {
 		margin: 0;
 	}
 	#roles {
-		width: 95%;
+		width: 100%;
 		height: auto;
 		margin-top: -10px;
 	}
 	#roles .role {
+		width: 95%;
 		height: -webkit-max-content;
 		height: -moz-max-content;
 		height: max-content;
+		margin: 0 auto;
 	}
 	#roles b {
 		font-size: 1rem;
@@ -1989,7 +2012,7 @@ h2 {
 	}
 	#introduction .intro-text header h4 {
 		font-size: 1.5vw;
-		margin: 0 10px -23px 0;
+		margin: 0 10px -17px 0;
 	}
 	#introduction .intro-text header h1 {
 		font-size: 3.7vw;
@@ -2038,7 +2061,8 @@ h2 {
 		font-size: 1.5rem;
 	}
 	#portfolio .role {
-		width: 93.5%;
+		width: 97.5%;
+		margin: 0 auto;
 	}
 	#portfolio .role b {
 		font-size: 0.95rem;
@@ -2077,6 +2101,7 @@ h2 {
 		width: min-content;
 	}
 	#portfolio .tech-stacks li {
+		width: 60px;
 		padding: 8px 6px;
 		border-radius: 20px;
 		margin: 0 2.5vw;
@@ -2114,6 +2139,8 @@ h2 {
 		height: -webkit-max-content;
 		height: -moz-max-content;
 		height: max-content;
+		width: 800px;
+		margin: 0 auto;
 	}
 	#roles b {
 		font-size: 1rem;
@@ -2452,7 +2479,8 @@ h2 {
 		font-size: 1.5rem;
 	}
 	#portfolio .role {
-		width: 93.5%;
+		width: 800px;
+		margin: 0 auto;
 	}
 	#portfolio .role b {
 		font-size: 0.95rem;
@@ -2473,30 +2501,33 @@ h2 {
 	#portfolio .tech-stacks,
 	#portfolio .backends,
 	#portfolio .platforms {
-		width: 1200px;
+		width: 1000px;
+		max-width: 1200px;
 		margin: 0 auto 30px;
 		justify-content: center;
 	}
 	#portfolio .tech-stacks {
-		width: 1200px;
 		display: flex;
 		flex-direction: row;
 		margin: 0 auto;
 		gap: 0;
-		justify-content: center;
+		justify-content: space-around;
 	}
 	#portfolio .tech-stacks ul {
 		width: -webkit-min-content;
 		width: -moz-min-content;
 		width: min-content;
 	}
+	#portfolio .platforms ul {
+		width: 100%;
+	}
 	#portfolio .tech-stacks li {
 		padding: 8px 6px;
 		border-radius: 20px;
 		margin: 0 2.5vw;
 	}
-	#portfolio .platforms li,
-	#portfolio .backends li {
+	#portfolio .platforms ul li,
+	#portfolio .backends ul li {
 		width: 50px;
 		padding: 8px;
 		border-radius: 20px;
@@ -2515,10 +2546,10 @@ h2 {
 		width: 35px;
 		height: 35px;
 	}
-	.platforms ul {
+	/* .platforms ul {
 		padding: 0;
 		margin: 0;
-	}
+	} */
 	#roles {
 		width: 95%;
 		height: auto;
@@ -2852,6 +2883,7 @@ h2 {
 		font-size: 1rem;
 	}
 	#portfolio {
+		width: 100%;
 		padding-top: 25px;
 		margin-top: 30px;
 		border-top: 2px solid #3c006d;
@@ -2861,6 +2893,7 @@ h2 {
 		padding-bottom: 0;
 		background-image: url(../svgs/portfolio/portfolio1399.svg);
 		margin-bottom: 10px;
+		overflow-x: hidden;
 	}
 	#portfolio h1 {
 		font-size: 1.85rem;
@@ -2883,7 +2916,8 @@ h2 {
 		font-size: 1.5rem;
 	}
 	#portfolio .role {
-		width: 93.5%;
+		width: 1000px;
+		margin: 0 auto;
 	}
 	#portfolio .role b {
 		font-size: 0.95rem;
@@ -2904,12 +2938,14 @@ h2 {
 	#portfolio .tech-stacks,
 	#portfolio .backends,
 	#portfolio .platforms {
-		width: 1200px;
-		margin: 0 auto 30px;
+		width: auto;
+		max-width: 1300px;
+		margin-bottom: 30px;
 		justify-content: center;
+		overflow-x: hidden;
+		margin: 0 auto;
 	}
 	#portfolio .tech-stacks {
-		width: 1200px;
 		display: flex;
 		flex-direction: row;
 		margin: 0 auto;
@@ -2917,9 +2953,12 @@ h2 {
 		justify-content: center;
 	}
 	#portfolio .tech-stacks ul {
-		width: -webkit-min-content;
-		width: -moz-min-content;
-		width: min-content;
+		width: auto;
+	}
+	#portfolio .platforms ul {
+		width: auto;
+		margin-left: -40px;
+		justify-content: center;
 	}
 	#portfolio .tech-stacks li {
 		padding: 8px 6px;
@@ -2938,6 +2977,7 @@ h2 {
 	#portfolio .platforms li p {
 		font-size: 0.75rem;
 		padding: 0;
+		line-clamp: 1;
 	}
 	#portfolio .backends li {
 		padding: 8px 10px;
@@ -2945,10 +2985,6 @@ h2 {
 	#portfolio .tech-stacks li img {
 		width: 35px;
 		height: 35px;
-	}
-	.platforms ul {
-		padding: 0;
-		margin: 0;
 	}
 	#roles {
 		width: 95%;
