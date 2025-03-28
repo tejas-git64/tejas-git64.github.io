@@ -1021,12 +1021,10 @@ h2 {
 		width: 90%;
 		margin: 0 auto;
 	}
-	#portfolio .tech-stacks li {
-		padding: 10px;
-	}
+	#portfolio .tech-stacks li,
 	#portfolio .platforms li,
 	#portfolio .backends li {
-		padding: 10px 15px;
+		padding: 10px;
 	}
 	#portfolio .tech-stacks li p,
 	#portfolio .backends li p,
@@ -1041,6 +1039,7 @@ h2 {
 	.platforms ul {
 		padding: 0;
 		margin: 0;
+		width: 85px;
 	}
 	#roles {
 		width: 95%;
