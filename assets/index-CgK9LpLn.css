@@ -2525,6 +2525,7 @@ h2 {
 		padding: 8px 6px;
 		border-radius: 20px;
 		margin: 0 2.5vw;
+		width: 60px;
 	}
 	#portfolio .platforms ul li,
 	#portfolio .backends ul li {
@@ -2963,14 +2964,15 @@ h2 {
 	#portfolio .tech-stacks li {
 		padding: 8px 6px;
 		border-radius: 20px;
-		margin: 0 2.5vw;
+		margin: 0 2vw;
+		width: 60px;
 	}
 	#portfolio .platforms li,
 	#portfolio .backends li {
 		width: 50px;
 		padding: 8px;
 		border-radius: 20px;
-		margin: 0 2.5vw;
+		margin: 0 1.5vw;
 	}
 	#portfolio .tech-stacks li p,
 	#portfolio .backends li p,
