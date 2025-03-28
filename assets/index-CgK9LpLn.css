@@ -170,6 +170,12 @@ nav {
 .mobile-nav a img {
 	width: 20px;
 	margin-bottom: -6px;
+	filter: invert(0.2);
+}
+.mobile-nav a img:hover {
+	transform: scale(1.1);
+	filter: invert(0);
+	transition: transform 0.15s ease, filter 0.15s ease;
 }
 
 nav a {
@@ -190,7 +196,13 @@ nav #logo {
 	display: flex;
 	align-items: center;
 	margin-bottom: -3px;
+	transition: ease-in 0.15s;
 }
+.social a img:hover {
+	filter: invert(40%);
+	transition: ease-in 0.15s;
+}
+
 .social a:nth-child(2) {
 	margin: 0 6vw;
 }
