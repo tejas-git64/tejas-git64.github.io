@@ -8,16 +8,17 @@
     <meta content="index, nofollow" name="robots" />
     <meta content="Portfolio of Tejas DL" name="description" />
     <title>Hey There 👋</title>
-    <noscript> </noscript>
-    <link rel="preload" href="/assets/index-CgK9LpLn.css" crossorigin="" as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="/images/introImage4.webp" as="image" />
-    <link rel="preload" href="/svgs/introduction/introduction499.svg" as="image" />
-    <link rel="preload" href="/svgs/introduction/introduction639.svg" as="image" />
-    <link rel="preload" href="/svgs/introduction/introduction899.svg" as="image" />
-    <link rel="preload" href="/svgs/introduction/introduction1199.svg" as="image" />
+    <link rel="preload" href="/intro-avatar.svg" as="image" />
+    <link rel="preload" href="/assets/index-CgK9LpLn.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/svgs/introduction/introduction449.svg" as="image" fetchpriority="high" imagesrcset="
+        /svgs/introduction/introduction449.svg 449vw,
+        /svgs/introduction/introduction639.svg 639vw,
+        /svgs/introduction/introduction899.svg 899vw,
+        /svgs/introduction/introduction1199.svg 1199vw
+    "
+      imagesizes="(max-width: 449px) 449vw, (max-width: 639px) 639vw, (max-width: 899px) 899vw, (max-width: 1200px) 1199vw" />
     <link rel="preload" href="/svgs/blob-home.svg" as="image" />
-    <script>
+    <!-- <script>
       !(function (t, e) {
         var o, n, p, r;
         e.__SV ||
@@ -68,13 +69,13 @@
         api_host: "https://us.i.posthog.com",
         person_profiles: "identified_only",
       });
-    </script>
-    <script type="module" crossorigin="" src="/assets/index-Egc9Tu5y.js"></script>
-    <link rel="stylesheet" crossorigin="" href="/assets/index-CgK9LpLn.css" />
+    </script> -->
+    <link rel="stylesheet" href="/assets/index-CgK9LpLn.css" />
     <link rel="modulepreload" href="/assets/index-Egc9Tu5y.js" />
   </head>
 
   <body>
+    <script type="module" src="/assets/index-Egc9Tu5y.js" defer></script>
     <div id="app">
       <div id="mobile-container">
         <div class="mobile-nav">
@@ -94,32 +95,40 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#projects">Works</a></li>
         </ul>
-        <a href=""><img alt="logo_tej" src="./images/Logo_tej.webp" id="logo" width="50" height="30" /></a>
+        <a href=""><img alt="logo_tej" src="./images/Logo_tej.webp" id="logo" width="24" height="24" /></a>
         <div class="social">
           <a href="https://twitter.com/yousurebro_tej"><img alt="twitter" src="./svgs/social/icons8-twitter.svg"
-              width="25" height="25" /> </a><a href="https://www.linkedin.com/in/tejas-dl-94b771185"><img alt="linkedin"
-              src="./svgs/social/icons8-linkedin.svg" width="26" height="26" /> </a><a
-            href="https://github.com/tejas-git64"><img alt="github" loading="lazy" src="./svgs/social/icons8-github.svg"
-              width="35" height="35" /></a>
+              width="24" height="24" loading="eager" /> </a>
+          <a href="https://www.linkedin.com/in/tejas-dl-94b771185"><img alt="linkedin"
+              src="./svgs/social/linkedin-svgrepo-com.svg" loading="eager" width="24" height="24" /> </a>
+          <a href="https://github.com/tejas-git64"><img alt="github" loading="eager"
+              src="./svgs/social/github-svgrepo-com.svg" width="24" height="24" style="margin-left: -2px;" /></a>
         </div>
       </nav>
       <section id="introduction">
+        <picture class="intro-background">
+          <source srcset="/svgs/introduction/introduction449.svg" media="(max-width: 449px)">
+          <source srcset="/svgs/introduction/introduction639.svg" media="(max-width: 639px)">
+          <source srcset="/svgs/introduction/introduction899.svg" media="(max-width: 899px)">
+          <source srcset="/svgs/introduction/introduction1199.svg" media="(min-width: 900px)">
+          <img src="#" loading="eager" fetchpriority="high" alt="intro-background" />
+        </picture>
         <div class="intro-text">
           <header>
-            <h2>Hi there,</h2>
-            <h1>i'm Tejas,</h1>
+            <h4>Hi there,</h4>
+            <h1>i'm Tejas</h1>
           </header>
-          <b>An experienced frontend developer based in India</b>
-          <p>I design beautiful and functional web experiences</p>
-          <div class="connect">
-            <a href="#contact">Let's talk
-              <img src="/svgs/arrow-up-right-svgrepo-com.svg" alt="visit-icon" width="20" height="20" /></a>
-            <a href="#about">Hire me
-              <img src="/svgs/arrow-up-right-svgrepo-com.svg" alt="visit-icon" width="20" height="20" /></a>
-          </div>
+          <b>Frontend developer,<br>UI Enthusiast</br>
+            <p>I build elegant experiences on the web</p>
+            <div class="connect">
+              <a href="#contact">Let's talk
+                <img src="/svgs/arrow-up-right-svgrepo-com.svg" alt="visit-icon" width="20" height="20" /></a>
+              <a href="#about">About
+                <img src="/svgs/arrow-up-right-svgrepo-com.svg" alt="visit-icon" width="20" height="20" /></a>
+            </div>
         </div>
         <div class="intro-images">
-          <img alt="intro-image" src="./images/introImage4.webp" width="250" height="350" />
+          <img alt="intro-image" src="./intro-avatar.svg" loading="eager" width="280" height="350" />
         </div>
       </section>
       <section id="portfolio">
@@ -446,7 +455,7 @@
             spare time, I tinker with <b>CSS</b>, watch anime or meditate
           </p>
         </div>
-        <a href="./Tejasdl_Resume.pdf" class="animateFadeIn" download="">View Resume</a>
+        <a href="./Tejasdl_resume.pdf" class="animateFadeIn" download="">View Resume</a>
       </section>
       <section id="contact">
         <p class="top"></p>
