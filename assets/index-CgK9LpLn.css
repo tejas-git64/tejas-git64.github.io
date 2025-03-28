@@ -1977,14 +1977,14 @@ h2 {
 	}
 	#introduction .intro-text header h4 {
 		font-size: 1.5vw;
-		margin: 0 10px -20px 0;
+		margin: 0 10px -23px 0;
 	}
 	#introduction .intro-text header h1 {
 		font-size: 3.7vw;
 	}
 	#introduction .intro-text b {
 		font-size: 3.7vw;
-		line-height: 4vw;
+		line-height: 4.5vw;
 		text-align: left;
 		margin-top: 5px;
 	}
@@ -2372,7 +2372,7 @@ h2 {
 		padding: 10px 20px;
 	}
 	#introduction .intro-images img {
-		width: 23.5vw;
+		width: 22.5vw;
 		height: auto;
 		background-size: contain;
 		padding-bottom: 20px;
@@ -2391,7 +2391,7 @@ h2 {
 	}
 	#introduction .intro-text header h4 {
 		font-size: 1.5vw;
-		margin: 0 15px -20px 0;
+		margin: 0 10px -20px 0;
 	}
 	#introduction .intro-text header h1 {
 		font-size: 3.5vw;
@@ -2728,7 +2728,7 @@ h2 {
 		justify-content: space-between;
 		align-items: center;
 		width: 97.5%;
-		padding: 0;
+		padding: 5px 15px;
 	}
 	#mobile-container {
 		width: 60px;
@@ -2778,27 +2778,27 @@ h2 {
 		width: 20px;
 	}
 	nav #logo {
-		padding: 0 10px;
-		margin-left: -65px;
-		width: 35px;
-		height: 35px;
+		width: 30px;
+		height: 30px;
 	}
 	#introduction {
 		width: 100%;
 		margin: 0 auto;
-		height: 500px;
+		height: 650px;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-evenly;
 		padding: 20px 0;
+		padding-right: 10px;
 	}
 	#introduction .intro-images {
 		width: 400px;
+		height: 400px;
 		margin: 0;
-		padding: 20px 50px 0;
+		padding: 20px 40px 80px;
 	}
 	#introduction .intro-images img {
-		width: 300px;
+		width: 320px;
 		height: auto;
 		background-size: contain;
 		padding-bottom: 10px;
@@ -2814,21 +2814,22 @@ h2 {
 	#introduction .intro-text header {
 		align-items: center;
 	}
-	#introduction .intro-text header h2 {
-		font-size: 2.5rem;
-		margin-right: 5px;
+	#introduction .intro-text header h4 {
+		font-size: 1.25rem;
+		margin: 0 10px -30px 0;
 	}
 	#introduction .intro-text header h1 {
-		font-size: 2.5rem;
+		font-size: 3.5rem;
 	}
 	#introduction .intro-text b {
-		font-size: 2rem;
-		line-height: 40px;
+		font-size: 3.5rem;
+		line-height: 3.8rem;
 		text-align: left;
+		margin: 10px 0;
 	}
 	#introduction .intro-text p {
-		font-size: 1rem;
-		margin-top: 15px;
+		font-size: 1.25rem;
+		margin-top: 10px;
 	}
 	#introduction .intro-text .connect {
 		justify-content: flex-start;
