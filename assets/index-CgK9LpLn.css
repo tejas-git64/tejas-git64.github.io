@@ -104,7 +104,7 @@ button:focus-visible {
 	}
 }
 h1,
-h2,
+h4,
 p {
 	padding: 0;
 	margin: 0;
@@ -1024,7 +1024,8 @@ h2 {
 	#portfolio .tech-stacks li,
 	#portfolio .platforms li,
 	#portfolio .backends li {
-		padding: 10px;
+		width: 55px;
+		padding: 8px 5px;
 	}
 	#portfolio .tech-stacks li p,
 	#portfolio .backends li p,
@@ -1324,7 +1325,8 @@ h2 {
 		margin: 0 auto;
 	}
 	#portfolio .tech-stacks li {
-		padding: 8px 8px 8px 0;
+		width: 90px;
+		padding: 5px;
 		border-radius: 10px;
 		display: flex;
 		flex-direction: row;
@@ -1333,29 +1335,28 @@ h2 {
 	}
 	#portfolio .platforms li,
 	#portfolio .backends li {
-		width: auto;
-		padding: 8px 0 8px 8px;
+		width: 85px;
+		padding: 5px;
 		border-radius: 10px;
-		margin: 20px 30px;
+		margin: 20px auto;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-around;
 	}
-	#portfolio .tech-stacks li p {
-		font-size: 0.65rem;
-		padding: 0;
-	}
+	#portfolio .tech-stacks li p,
 	#portfolio .backends li p,
 	#portfolio .platforms li p {
 		font-size: 0.65rem;
-		padding: 0 10px;
+		padding: 0;
 	}
-	#portfolio .tech-stacks li img {
+	#portfolio .tech-stacks li img,
+	#portfolio .platforms li img,
+	#portfolio .backends li img {
 		width: 35px;
 		height: 35px;
-		margin-left: 0;
-		padding-left: 5px;
+		margin: 0;
+		padding: 0;
 	}
 	.platforms ul {
 		padding: 0;
