@@ -590,8 +590,8 @@ h2 {
 	);
 }
 #about .img-back {
-	-webkit-filter: drop-shadow(15px 10px 10px #006eff);
-	filter: drop-shadow(15px 10px 10px #006eff);
+	-webkit-filter: drop-shadow(10px 8px 10px #006eff);
+	filter: drop-shadow(10px 8px 0px #006eff);
 	width: 310px;
 	height: 336px;
 	-webkit-clip-path: polygon(
@@ -621,9 +621,9 @@ h2 {
 	border: 1px solid #000;
 	background-color: #210036;
 	padding: 25px 15px;
-	text-align: center;
+	text-align: justify;
 	color: #81fff5;
-	box-shadow: -20px -20px #006eff;
+	box-shadow: -10px -10px #006eff;
 	border-radius: 20px;
 	word-spacing: 10px;
 }
@@ -645,7 +645,7 @@ h2 {
 	z-index: 20;
 }
 #about a:hover {
-	box-shadow: -1vw -1vw #006eff;
+	box-shadow: -10px -10px #006eff;
 	transform: scale(1.05);
 	color: #f9f9f9;
 }
@@ -1187,9 +1187,6 @@ h2 {
 		background-color: #006eff;
 	}
 	#about .img-back {
-		-webkit-filter: drop-shadow(2.5vw 1.5vw 0px #006eff);
-		filter: drop-shadow(2.5vw 1.5vw 0px #006eff);
-		height: auto;
 		margin-top: 20px;
 	}
 	#about .about-me p {
@@ -1533,9 +1530,6 @@ h2 {
 		background-color: #006eff;
 	}
 	#about .img-back {
-		-webkit-filter: drop-shadow(2.5vw 1.5vw 0px #006eff);
-		filter: drop-shadow(2.5vw 1.5vw 0px #006eff);
-		height: auto;
 		margin-top: 20px;
 	}
 	#about .about-me p {
@@ -1914,8 +1908,6 @@ h2 {
 		margin-right: 10px;
 	}
 	#about .img-back {
-		-webkit-filter: drop-shadow(2.5vw 1.5vw 0px #006eff);
-		filter: drop-shadow(2.5vw 1.5vw 0px #006eff);
 		height: auto;
 		margin-top: 50px;
 	}
@@ -2333,8 +2325,6 @@ h2 {
 		margin-top: 10px;
 	}
 	#about .img-back {
-		-webkit-filter: drop-shadow(1.5vw 1vw 0px #006eff);
-		filter: drop-shadow(1.5vw 1vw 0px #006eff);
 		height: auto;
 		margin: 50px 50px 50px 0;
 	}
@@ -2754,8 +2744,6 @@ h2 {
 		margin-top: 10px;
 	}
 	#about .img-back {
-		-webkit-filter: drop-shadow(1.5vw 1vw 0px #006eff);
-		filter: drop-shadow(1.5vw 1vw 0px #006eff);
 		height: auto;
 		margin: 50px 50px 50px 0;
 	}
@@ -3217,8 +3205,6 @@ h2 {
 		margin-top: 10px;
 	}
 	#about .img-back {
-		-webkit-filter: drop-shadow(20px 20px 0px #006eff);
-		filter: drop-shadow(20px 20px 0px #006eff);
 		height: auto;
 		margin: 50px;
 	}
