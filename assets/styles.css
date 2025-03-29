@@ -534,6 +534,9 @@ h2 {
 	top: 0;
 	left: 0;
 }
+#about h1 {
+	background: none;
+}
 #contact .top {
 	width: 100%;
 	height: 300px;
@@ -647,11 +650,7 @@ h2 {
 	color: #f9f9f9;
 }
 #about h1 {
-	background-image: url(../svgs/about/about1199.svg);
-	background-position: top;
-	padding-top: 15px;
-	background-size: cover;
-	margin-top: -2px;
+	padding: 150px 0;
 }
 #about h1,
 #contact h1,
@@ -774,6 +773,7 @@ h2 {
 	font-size: 0.75rem;
 	padding: 5px 0;
 }
+
 .tech.animated {
 	-webkit-animation: fadeIn 0.5s ease;
 	animation: fadeIn 0.5s ease;
@@ -1160,16 +1160,22 @@ h2 {
 	#contact {
 		background-size: cover;
 		background-position: bottom;
-		padding: 50vw 0 40vw;
+	}
+	#contact h1 {
+		padding: 50px 0 150px;
 	}
 	#about {
+		width: 100%;
 		height: auto;
 		background-image: url(../svgs/about/about449.svg);
-		background-position: top;
-		padding: 100px 0 150px;
+		background-position: bottom;
+		background-size: contain;
+		background-repeat: repeat-x;
+		padding: 50px 0;
 	}
 	#about h1 {
 		padding: 15px 0 0;
+		background: none;
 	}
 	#about .about-me {
 		height: auto;
@@ -1207,14 +1213,18 @@ h2 {
 	#contact h1 {
 		background-image: url(../svgs/contact/h1/h1449.svg);
 		font-size: 1.25rem;
+		background-position: bottom;
 		margin-top: -20px;
 	}
 	#contact .top {
+		width: 100%;
 		background-image: url(../svgs/contact/top/top449.svg);
+		background-size: contain;
 		position: absolute;
-		top: -20px;
+		top: -130px;
 		left: 0;
-		height: 100px;
+		height: 200px;
+		margin: 0;
 	}
 	.contact-container {
 		width: 90%;
@@ -1505,11 +1515,14 @@ h2 {
 	#about {
 		height: auto;
 		background-image: url(../svgs/about/about639.svg);
-		background-position: top;
-		padding: 100px 0 250px;
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: contain;
+		margin-top: -2px;
+		padding: 150px 0;
 	}
 	#about h1 {
-		padding: 15px 0 0;
+		padding: 15px 0;
 	}
 	#about .about-me {
 		height: auto;
@@ -1545,8 +1558,7 @@ h2 {
 	}
 	#contact h1 {
 		background-image: url(../svgs/contact/h1/h1639.svg);
-		font-size: 1.4rem;
-		margin-top: -50px;
+		font-size: 1.5rem;
 		padding-bottom: 50vw;
 	}
 	#contact .top {
@@ -1710,7 +1722,7 @@ h2 {
 	}
 	#introduction .intro-text .connect a {
 		padding: 8px 10px;
-		font-size: 0.85rem;
+		font-size: 0.75rem;
 	}
 	#portfolio {
 		padding-top: 25px;
@@ -1877,8 +1889,11 @@ h2 {
 	#about {
 		height: auto;
 		background-image: url(../svgs/about/about899.svg);
-		background-position: top;
-		padding: 50px 0 200px;
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: contain;
+		padding: 250px 0;
+		margin-top: -2px;
 	}
 	#about h1 {
 		padding: 15px 0 0;
@@ -2292,11 +2307,14 @@ h2 {
 	#about {
 		height: auto;
 		background-image: url(../svgs/about/about1199.svg);
-		background-position: top;
-		padding: 50px 0 200px;
+		background-position: bottom;
+		background-size: contain;
+		background-repeat: repeat-x;
+		padding: 250px 0;
+		margin-top: -3px;
 	}
 	#about h1 {
-		padding: 15px 0 0;
+		padding: 50px 0;
 		margin-bottom: 20px;
 	}
 	#about .about-me {
@@ -2345,10 +2363,10 @@ h2 {
 	#contact h1 {
 		background-image: url(../svgs/contact/h1/h11199.svg);
 		font-size: 1.75rem;
-		margin-top: -20px;
+		/* margin-top: -20px; */
 		padding-bottom: 20vw;
 		background-position: center;
-		background-size: contain;
+		background-size: cover;
 	}
 	#contact .top {
 		background-image: url(../svgs/contact/top/top1199.svg);
@@ -2711,8 +2729,10 @@ h2 {
 	#about {
 		height: auto;
 		background-image: url(../svgs/about/about1399.svg);
-		background-position: top;
-		padding: 50px 0 250px;
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: contain;
+		padding: 250px 0;
 	}
 	#about h1 {
 		padding: 15px 0 0;
@@ -2871,7 +2891,7 @@ h2 {
 	#introduction {
 		width: 100%;
 		margin: 0 auto;
-		height: 650px;
+		height: 600px;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-evenly;
@@ -2883,6 +2903,11 @@ h2 {
 		height: 400px;
 		margin: 0;
 		padding: 20px 40px 80px;
+	}
+	.intro-background {
+		background-size: contain;
+		background-repeat: repeat-y;
+		background-position: right;
 	}
 	.intro-images #blob {
 		width: 65%;
@@ -2935,8 +2960,8 @@ h2 {
 		margin-top: 35px;
 	}
 	#introduction .intro-text .connect a {
-		padding: 7px 15px;
-		font-size: 1rem;
+		padding: 10px 15px;
+		font-size: 0.85rem;
 	}
 	#portfolio {
 		width: 100%;
