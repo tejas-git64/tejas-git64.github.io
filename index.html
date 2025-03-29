@@ -8,17 +8,26 @@
     <meta content="index, nofollow" name="robots" />
     <meta content="Portfolio of Tejas DL" name="description" />
     <title>Hey There 👋</title>
-    <link rel="preload" href="/intro-avatar.svg" as="image" />
-    <link rel="preload" href="/assets/index-CgK9LpLn.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="/svgs/introduction/introduction449.svg" as="image" fetchpriority="high" imagesrcset="
+    <link rel="preload" href="/svgs/introduction/intro-avatar.svg" as="image" />
+    <link rel="preload" href="/svgs/blobs/blob-home.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="#" as="image" imagesrcset="
         /svgs/introduction/introduction449.svg 449vw,
         /svgs/introduction/introduction639.svg 639vw,
         /svgs/introduction/introduction899.svg 899vw,
-        /svgs/introduction/introduction1199.svg 1199vw
+        /svgs/introduction/introduction1199.svg 1199vw,
+        /svgs/introduction/introduction1399.svg 1399vw,
     "
-      imagesizes="(max-width: 449px) 449vw, (max-width: 639px) 639vw, (max-width: 899px) 899vw, (max-width: 1200px) 1199vw" />
-    <link rel="preload" href="/svgs/blob-home.svg" as="image" />
-    <!-- <script>
+      imagesizes="(max-width: 449px) 449vw, (max-width: 639px) 639vw, (max-width: 899px) 899vw, (max-width: 1199px) 1199vw, (max-width: 1400px) 1399vw" />
+    <link rel="preload" href="#" as="image" imagesrcset="
+        /svgs/portfolio/portfolio449.svg 449vw,
+        /svgs/portfolio/portfolio639.svg 639vw,
+        /svgs/portfolio/portfolio899.svg 899vw,
+        /svgs/portfolio/portfolio1199.svg 1199vw,
+        /svgs/portfolio/portfolio1399.svg 1399vw,
+    "
+      imagesizes="(max-width: 449px) 449vw, (max-width: 639px) 639vw, (max-width: 899px) 899vw, (max-width: 1199px) 1199vw, (min-width: 1200px) 1399vw" />
+    <script>
       !(function (t, e) {
         var o, n, p, r;
         e.__SV ||
@@ -69,28 +78,28 @@
         api_host: "https://us.i.posthog.com",
         person_profiles: "identified_only",
       });
-    </script> -->
-    <link rel="stylesheet" href="/assets/index-CgK9LpLn.css" />
-    <link rel="modulepreload" href="/assets/index-Egc9Tu5y.js" />
+    </script>
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="modulepreload" href="/assets/script.js" />
   </head>
 
   <body>
-    <script type="module" src="/assets/index-Egc9Tu5y.js" defer></script>
+    <script type="module" src="/assets/script.js" defer></script>
     <div id="app">
       <div id="mobile-container">
         <div class="mobile-nav">
-          <a href="#portfolio"><img alt="nav-icon" src="./svgs/work-svgrepo-com.svg" width="30" height="30"
-              style="width: 30px" />Experience</a>
-          <a href="#projects"><img alt="nav-icon" src="./svgs/project-svgrepo-com.svg" width="29" height="29"
-              style="width: 25px; padding: 2px" />Projects</a>
-          <a href="#about"><img alt="nav-icon" src="./svgs/user-03-svgrepo-com.svg" style="width: 30px" width="30"
-              height="30" />About</a>
-          <a href="#contact"><img alt="nav-icon" src="./svgs/message-square-chat-svgrepo-com.svg" width="30" height="30"
-              style="width: 30px" />Connect</a>
+          <a href="#portfolio"><img alt="exp-icon" src="./svgs/extras/anchor.svg" width="22" height="22"
+              style="padding-bottom: 1px;" />Experience</a>
+          <a href="#projects"><img alt="projects-icon" src="./svgs/extras/project-svgrepo-com.svg" width="25"
+              height="25" />Projects</a>
+          <a href="#about"><img alt="about-icon" src="./svgs/extras/user.svg" width="24" height="24"
+              style="padding-bottom: 0px;" />About</a>
+          <a href="#contact"><img alt="message-icon" src="./svgs/extras/message.svg" width="28" height="28"
+              style="margin-bottom: -2px;" />Connect</a>
         </div>
       </div>
       <nav>
-        <a href="#"><img src="./images/Logo_tej.webp" id="logo" width="24" height="24" alt="logo_tej" /></a>
+        <a href="#"><img src="./images/icons/Logo_tej.webp" id="logo" width="24" height="24" alt="logo_tej" /></a>
         <div class="social">
           <a href="https://twitter.com/yousurebro_tej"><img alt="twitter" src="./svgs/social/icons8-twitter.svg"
               width="24" height="24" loading="eager" /> </a>
@@ -105,8 +114,9 @@
           <source srcset="/svgs/introduction/introduction449.svg" media="(max-width: 449px)">
           <source srcset="/svgs/introduction/introduction639.svg" media="(max-width: 639px)">
           <source srcset="/svgs/introduction/introduction899.svg" media="(max-width: 899px)">
-          <source srcset="/svgs/introduction/introduction1199.svg" media="(min-width: 900px)">
-          <img src="#" loading="eager" fetchpriority="high" alt="intro-background" />
+          <source srcset="/svgs/introduction/introduction1199.svg" media="(max-width: 1199px)">
+          <source srcset="/svgs/introduction/introduction1399.svg" media="(min-width: 1200px)">
+          <img src="#" loading="eager" alt="intro-background" />
         </picture>
         <div class="intro-text">
           <header>
@@ -117,20 +127,22 @@
           <p>I build elegant experiences on the web</p>
           <div class="connect">
             <a href="#contact">Let's talk
-              <img src="/svgs/arrow-up-right-svgrepo-com.svg" alt="visit-icon" width="20" height="20" /></a>
+              <img src="/svgs/extras/arrow-up-right-svgrepo-com.svg" alt="visit-icon" width="20" height="20" /></a>
             <a href="#about">About me
-              <img src="/svgs/arrow-up-right-svgrepo-com.svg" alt="visit-icon" width="20" height="20" /></a>
+              <img src="/svgs/extras/arrow-up-right-svgrepo-com.svg" alt="visit-icon" width="20" height="20" /></a>
           </div>
         </div>
         <div class="intro-images">
-          <img alt="intro-image" src="./intro-avatar.svg" loading="eager" width="280" height="350" />
+          <img src="./svgs/blobs/blob-home.svg" id="blob" loading="eager" alt="blob" />
+          <img src="./svgs/introduction/intro-avatar.svg" id="avatar" loading="eager" width="280" height="350"
+            alt="intro-image" />
         </div>
       </section>
       <section id="portfolio">
         <h1>Portfolio</h1>
         <div class="stack-header">
           <p class="stack-heading">Experience</p>
-          <img alt="exp" src="./svgs/anchor.svg" loading="lazy" style="margin-bottom: 0px" />
+          <img alt="exp" src="./svgs/extras/anchor.svg" loading="eager" style="margin-bottom: 0px" />
         </div>
         <ul id="roles">
           <li class="animateFromRight role">
@@ -212,7 +224,7 @@
         </ul>
         <div class="stack-header">
           <p class="stack-heading">Tech stack</p>
-          <img alt="tech-icon" loading="lazy" src="./svgs/layers.svg" />
+          <img alt="tech-icon" loading="lazy" src="./svgs/extras/layers.svg" />
         </div>
         <div class="tech-stacks">
           <ul class="vanilla">
@@ -253,7 +265,7 @@
         </div>
         <div class="stack-header">
           <p class="stack-heading">Tools &amp; Platforms</p>
-          <img alt="tech-icon" loading="lazy" src="./svgs/drafting-compass.svg" />
+          <img alt="tech-icon" loading="lazy" src="./svgs/extras/drafting-compass.svg" />
         </div>
         <div class="platforms">
           <ul class="tools">
@@ -280,7 +292,7 @@
               <p>Testing<br>library</p>
             </li>
             <li class="tech">
-              <img alt="tech-icon" loading="lazy" src="./images/zustand.png" />
+              <img alt="tech-icon" loading="lazy" src="./images/icons/zustand.png" />
               <p>Zustand</p>
             </li>
             <li class="tech">
@@ -326,11 +338,12 @@
               <img alt="bingetown" loading="eager" src="./images/bingetown/main.webp" height="229" width="452" />
               <ul class="links">
                 <li>
-                  <a href="https://github.com/tejas-git64/BingeTown">Github<img alt="github-icon" loading="lazy"
-                      src="./svgs/tech/icons8-github.svg" class="github" /></a>
+                  <a href="https://github.com/tejas-git64/BingeTown"><img alt="github-icon" loading="lazy"
+                      src="./svgs/tech/github-svgrepo-com.svg" class="github" /></a>
                 </li>
                 <li>
-                  <a href="https://bingetown.vercel.app">View demo</a>
+                  <a href="https://bingetown.vercel.app" title="Visit Bingetown"><img src="./svgs/extras/link.svg"
+                      loading="lazy" alt="link-icon" class="link" /></a>
                 </li>
               </ul>
             </div>
@@ -356,11 +369,12 @@
               <img alt="lowkey" loading="eager" src="./images/lowkey/main.webp" height="229" width="452" />
               <ul class="links">
                 <li>
-                  <a href="https://github.com/tejas-git64/LowKey-player">Github<img alt="github-icon"
-                      src="./svgs/tech/icons8-github.svg" loading="lazy" class="github" /></a>
+                  <a href="https://github.com/tejas-git64/LowKey-player"><img alt="github-icon"
+                      src="./svgs/tech/github-svgrepo-com.svg" loading="lazy" class="github" /></a>
                 </li>
                 <li>
-                  <a href="https://lowkeymusic-v2.netlify.app">View demo</a>
+                  <a href="https://lowkeymusic-v2.netlify.app" title="Visit Lowkey"><img src="./svgs/extras/link.svg"
+                      loading="lazy" alt="link-icon" class="link" /></a>
                 </li>
               </ul>
             </div>
@@ -370,11 +384,12 @@
               <img alt="notes" src="./images/socialdashboard/main.webp" loading="eager" height="229" width="452" />
               <ul class="links">
                 <li>
-                  <a href="https://github.com/tejas-git64/SocialDashboard">Github<img alt="github-icon" loading="lazy"
-                      src="./svgs/tech/icons8-github.svg" class="github" /></a>
+                  <a href="https://github.com/tejas-git64/SocialDashboard"><img alt="github-icon" loading="lazy"
+                      src="./svgs/tech/github-svgrepo-com.svg" class="github" /></a>
                 </li>
                 <li>
-                  <a href="https://adorable-otter-3d83ff.netlify.app/">View demo</a>
+                  <a href="https://adorable-otter-3d83ff.netlify.app/" title="Visit SocialDashboard"><img
+                      src="./svgs/extras/link.svg" alt="link-icon" loading="lazy" class="link" /></a>
                 </li>
               </ul>
             </div>
@@ -398,11 +413,12 @@
               <img alt="tenki" loading="eager" src="./images/Tenki/main.webp" height="229" width="452" />
               <ul class="links">
                 <li>
-                  <a href="https://github.com/tejas-git64/Tenki">Github<img alt="github-icon"
-                      src="./svgs/tech/icons8-github.svg" loading="lazy" class="github" /></a>
+                  <a href="https://github.com/tejas-git64/Tenki"><img alt="github-icon"
+                      src="./svgs/tech/github-svgrepo-com.svg" loading="lazy" class="github" /></a>
                 </li>
                 <li>
-                  <a href="https://preeminent-cucurucho-2b4740.netlify.app">View demo</a>
+                  <a href="https://preeminent-cucurucho-2b4740.netlify.app" title="Visit Tenki"><img
+                      src="./svgs/extras/link.svg" alt="link-icon" loading="lazy" class="link" /></a>
                 </li>
               </ul>
             </div>
@@ -413,7 +429,7 @@
         <h1>About me</h1>
         <div class="about-me">
           <div class="img-back">
-            <img alt="tejasdl" src="/assets/portfolio_image-C5cRms3L.webp" loading="lazy" id="about-img"
+            <img alt="tejasdl" src="/images/portfolio_image.webp" loading="lazy" id="about-img"
               class="animateFromRight" />
           </div>
           <p class="animateFromLeft">
@@ -441,7 +457,7 @@
         <h1 data-animation="animateFadeIn">
           Want to build the next big thing?
         </h1>
-        <img src="/svgs/contact-illustration.svg" loading="lazy" alt="mail-art" id="mail-art" width="500"
+        <img src="/svgs/illustration/contact-illustration.svg" loading="lazy" alt="mail-art" id="mail-art" width="500"
           height="500" />
         <div class="animateFadeBottom contact-container">
           <form action="https://formsubmit.co/b0699b68232a81637d5197ce1cdbefcc" id="contact-form" method="POST"
@@ -463,7 +479,7 @@
             <input name="_template" type="hidden" value="box" />
             <button id="send-button" type="submit">
               <p id="button-text">Send message</p>
-              <img alt="plane" loading="lazy" src="./images/icons8-send-48.png" id="button-img" />
+              <img alt="plane" loading="lazy" src="./images/icons/icons8-send-48.png" id="button-img" />
             </button>
           </form>
         </div>
