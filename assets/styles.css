@@ -802,8 +802,8 @@ h2 {
 }
 
 .tech-stacks li img {
-	width: 50px;
-	height: 50px;
+	width: 25px;
+	height: 25px;
 	padding: 0 5px;
 }
 
@@ -829,8 +829,8 @@ h2 {
 }
 
 .platforms li img {
-	width: 35px;
-	height: 35px;
+	width: 25px;
+	height: 25px;
 	padding: 0;
 }
 
@@ -857,8 +857,8 @@ h2 {
 }
 
 .backends li img {
-	width: 35px;
-	height: 35px;
+	width: 25px;
+	height: 25px;
 	padding: 0;
 }
 
@@ -888,22 +888,13 @@ h2 {
 #roles .role {
 	list-style: none;
 	text-align: left;
-	padding: 10px 8px;
+	padding: 8px;
 	border-radius: 15px;
 	background-color: #2900429c;
 	color: #fff;
 	width: 97.5%;
 	margin: 0 auto;
 	margin-left: 6px;
-}
-
-#roles .company {
-	font-weight: 600;
-	padding: 0;
-	font-family: Plus Jakarta Sans;
-	font-size: 13px;
-	margin: 5px 0;
-	padding: 0 5px;
 }
 
 .role b {
@@ -916,7 +907,25 @@ h2 {
 .role p {
 	color: #fff;
 	font-weight: 300;
-	font-size: 0.75rem;
+	font-family: monospace;
+	font-size: 0.7rem;
+}
+
+#roles .role .company {
+	font-weight: 600;
+	padding: 0;
+	font-family: monospace;
+	font-size: 1.1rem;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+.role #res {
+	font-family: monospace;
+}
+
+.role #res li p {
+	font-size: 0.8rem;
 }
 
 .role small {
@@ -1237,14 +1246,6 @@ h2 {
 		font-size: 0.65rem;
 	}
 
-	.role #res {
-		font-family: monospace;
-	}
-
-	.role #res li p {
-		font-size: 0.75rem;
-	}
-
 	.abstraction,
 	.main,
 	.vanilla {
@@ -1554,7 +1555,7 @@ h2 {
 	}
 
 	#portfolio .stack-header {
-		margin: 30px auto 0px;
+		margin: 20px auto 0;
 		justify-content: center;
 		align-items: center;
 	}
@@ -1585,6 +1586,12 @@ h2 {
 		align-items: center;
 	}
 
+	#portfolio .tech-stacks,
+	#portfolio .backends,
+	#portfolio .platforms {
+		margin: 10px auto;
+	}
+
 	#portfolio .tech-stacks {
 		width: 90%;
 		margin: 0 auto;
@@ -1606,12 +1613,11 @@ h2 {
 		width: 85px;
 		padding: 5px;
 		border-radius: 10px;
-		margin: 20px auto;
+		margin: 30px auto;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-around;
-		margin: 30px 0;
 	}
 
 	#portfolio .tech-stacks li p,
@@ -1624,8 +1630,8 @@ h2 {
 	#portfolio .tech-stacks li img,
 	#portfolio .platforms li img,
 	#portfolio .backends li img {
-		width: 35px;
-		height: 35px;
+		width: 30px;
+		height: 30px;
 		margin: 0;
 		padding: 0;
 	}
@@ -1999,7 +2005,7 @@ h2 {
 	}
 
 	#portfolio .stack-header {
-		margin: 30px auto 0px;
+		margin: 10px auto 0px;
 		justify-content: center;
 		align-items: center;
 	}
@@ -2034,7 +2040,7 @@ h2 {
 	}
 
 	#portfolio .tech-stacks li {
-		padding: 8px 8px 8px 0;
+		padding: 8px;
 		border-radius: 10px;
 		display: flex;
 		flex-direction: row;
@@ -2046,13 +2052,13 @@ h2 {
 	#portfolio .platforms li,
 	#portfolio .backends li {
 		width: auto;
-		padding: 8px 0 8px 8px;
+		padding: 8px;
 		border-radius: 10px;
 		margin: 40px auto;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-evenly;
 	}
 
 	#portfolio .tech-stacks li p {
@@ -2066,11 +2072,11 @@ h2 {
 		padding: 0 10px;
 	}
 
-	#portfolio .tech-stacks li img {
+	#portfolio .tech-stacks li img,
+	#portfolio .platforms li img,
+	#portfolio .backends li img {
 		width: 35px;
 		height: 35px;
-		margin-left: 0;
-		padding-left: 5px;
 	}
 
 	.platforms ul {
@@ -2502,8 +2508,8 @@ h2 {
 	#portfolio .tech-stacks,
 	#portfolio .backends,
 	#portfolio .platforms {
-		width: 100%;
-		margin: 0 auto 30px;
+		width: 80%;
+		margin: 0 auto 20px;
 		justify-content: center;
 	}
 
@@ -2522,16 +2528,10 @@ h2 {
 		width: min-content;
 	}
 
-	#portfolio .tech-stacks li {
-		width: 60px;
-		padding: 8px 6px;
-		border-radius: 20px;
-		margin: 0 2.5vw;
-	}
-
+	#portfolio .tech-stacks li,
 	#portfolio .platforms li,
 	#portfolio .backends li {
-		width: 50px;
+		width: 60px;
 		padding: 8px;
 		border-radius: 20px;
 		margin: 0 2.5vw;
@@ -2548,7 +2548,17 @@ h2 {
 		padding: 8px 10px;
 	}
 
-	#portfolio .tech-stacks li img {
+	#portfolio .platforms li {
+		height: 80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	#portfolio .tech-stacks li img,
+	#portfolio .platforms li img,
+	#portfolio .backends li img {
 		width: 35px;
 		height: 35px;
 	}
@@ -3002,7 +3012,7 @@ h2 {
 	#portfolio .tech-stacks,
 	#portfolio .backends,
 	#portfolio .platforms {
-		width: 1000px;
+		width: 90%;
 		max-width: 1200px;
 		margin: 0 auto 30px;
 		justify-content: center;
@@ -3013,7 +3023,6 @@ h2 {
 		flex-direction: row;
 		margin: 0 auto;
 		gap: 0;
-		justify-content: space-around;
 	}
 
 	#portfolio .tech-stacks ul {
@@ -3022,12 +3031,8 @@ h2 {
 		width: min-content;
 	}
 
-	#portfolio .platforms ul {
-		width: 100%;
-	}
-
 	#portfolio .tech-stacks li {
-		padding: 8px 6px;
+		padding: 8px 5px;
 		border-radius: 20px;
 		margin: 0 2.5vw;
 		width: 60px;
@@ -3038,7 +3043,16 @@ h2 {
 		width: 50px;
 		padding: 8px;
 		border-radius: 20px;
-		margin: 0 2.5vw;
+		margin: 0 2vw;
+	}
+
+	#portfolio .platforms ul li {
+		width: 55px;
+		height: 80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
 	}
 
 	#portfolio .tech-stacks li p,
@@ -3050,9 +3064,12 @@ h2 {
 
 	#portfolio .backends li {
 		padding: 8px 10px;
+		margin: 0 2vw;
 	}
 
-	#portfolio .tech-stacks li img {
+	#portfolio .tech-stacks li img,
+	#portfolio .platforms li img,
+	#portfolio .backends li img {
 		width: 35px;
 		height: 35px;
 	}
@@ -3463,7 +3480,7 @@ h2 {
 		border-bottom: 2px solid #410075;
 		border-radius: 40px;
 		box-shadow: none;
-		padding-bottom: 0;
+		padding-bottom: 50px;
 		background-image: url(../svgs/portfolio/portfolio1399.svg);
 		margin-bottom: 10px;
 		overflow-x: hidden;
@@ -3474,7 +3491,7 @@ h2 {
 	}
 
 	#portfolio .stack-header {
-		margin: 50px auto 30px;
+		margin: 20px auto 30px;
 		justify-content: center;
 		align-items: center;
 	}
@@ -3523,7 +3540,7 @@ h2 {
 	#portfolio .platforms {
 		width: auto;
 		max-width: 1300px;
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 		justify-content: center;
 		overflow-x: hidden;
 		margin: 0 auto;
@@ -3550,7 +3567,7 @@ h2 {
 	#portfolio .tech-stacks li {
 		padding: 8px 6px;
 		border-radius: 20px;
-		margin: 0 2vw;
+		margin: 0 30px;
 		width: 60px;
 	}
 
@@ -3559,7 +3576,16 @@ h2 {
 		width: 50px;
 		padding: 8px;
 		border-radius: 20px;
-		margin: 0 1.5vw;
+		margin: 0 30px;
+	}
+
+	#portfolio .platforms ul li {
+		width: 55px;
+		height: 80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
 	}
 
 	#portfolio .tech-stacks li p,
@@ -3574,7 +3600,9 @@ h2 {
 		padding: 8px 10px;
 	}
 
-	#portfolio .tech-stacks li img {
+	#portfolio .tech-stacks li img,
+	#portfolio .backends li img,
+	#portfolio .platforms li img {
 		width: 35px;
 		height: 35px;
 	}
