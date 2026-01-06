@@ -908,7 +908,7 @@ h2 {
 	color: #fff;
 	font-weight: 300;
 	font-family: monospace;
-	font-size: 0.7rem;
+	font-size: 0.75rem;
 }
 
 #roles .role .company {
@@ -925,7 +925,7 @@ h2 {
 }
 
 .role #res li p {
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 }
 
 .role small {
@@ -1243,7 +1243,7 @@ h2 {
 	}
 
 	#roles p {
-		font-size: 0.65rem;
+		font-size: 0.75rem;
 	}
 
 	.abstraction,
